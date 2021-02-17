@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -108,12 +107,12 @@
     <h2>Welcome!</h2>
     <h1>Saylani Assignments</h1>
     <p>Please click on button to see assignments</p>
-    <a class="button-links" target="_blank" href="./assignment-1/index.html">Assignment 1</a>
-    <a class="button-links" target="_blank" href="./assignment-2/index.html">Assignment 2</a>
-    <a class="button-links" target="_blank" href="./assignment-3/index.html">Assignment 3</a>
-    <a class="button-links" target="_blank" href="./assignment-4/index.html">Assignment 4</a>
-    <a class="button-links" target="_blank" href="./assignment-5/index.html">Assignment 5</a>
-    <a class="button-links" target="_blank" href="./assignment-6/index.html">Assignment 6</a>
+    <a class="button-links" target="_blank" href="./public/assignment-1/index.html">Assignment 1</a>
+    <a class="button-links" target="_blank" href="./public/assignment-2/index.html">Assignment 2</a>
+    <a class="button-links" target="_blank" href="./public/assignment-3/index.html">Assignment 3</a>
+    <a class="button-links" target="_blank" href="./public/assignment-4/index.html">Assignment 4</a>
+    <a class="button-links" target="_blank" href="./public/assignment-5/index.html">Assignment 5</a>
+    <a class="button-links" target="_blank" href="./public/assignment-6/index.html">Assignment 6</a>
   </div>
   <p id="load">Firebase SDK Loading&hellip;</p>
 
