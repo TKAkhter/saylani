@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Step 3</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+  <a href="https://classroom.google.com/u/0/c/MTk3MjE4NTQzNDk4/a/MjQ3NzAzMjcxMzA2/details">Reference</a>
+  <div class="text-center" style="text-align: left">
+
+    <!-- <table>
+        <td bgcolor="#a4dd9e" class="header-tabs">Step 1: Account</td>
+        <td bgcolor="#a4dd9e" class="header-tabs">Step 2: Personal Details</td>
+        <td bgcolor="#72a3de" class="header-tabs">Step 3: Your Review</td>
+      </table> -->
+
+    <div class="header-tab">
+      <p class="header-tab-item done"><b>Step 1: Account</b></p>
+      <p class="header-tab-item done"><b>Step 2: Personal Details</b< /p>
+          <p class="header-tab-item active"><b>Step 3: Your Review</b< /p>
+    </div>
+
+    <form action="./thank-you.html" method="GET">
+      <fieldset>
+        <legend>Your Review:</legend>
+
+        <div class="group-field">
+          <label><b>How did you hear about us? </b></label>
+          <select required id="about-us" name="about-us">
+            <option value="">Select your option</option>
+            <option value="linkedin">Linkedin</option>
+            <option value="facebook">Facebook</option>
+            <option value="rozee">Rozee</option>
+          </select>
+        </div>
+        <div class="group-field">
+          <p><b>Would you visit again?</b></p>
+          <input required type="radio" id="Yes" name="visit" value="Yes" /><label>Yes</label>
+          <input required type="radio" id="No" name="visit" value="No" /><label>No</label>
+          <input required type="radio" id="Maybe" name="visit" value="Maybe" /><label>Maybe</label>
+        </div>
+        <div class="group-field">
+          <p><b>Comments:</b></p>
+          <textarea required name="comments" id="comments" cols="40" rows="4"
+            placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div class="group-field">
+          <p>Documents:<br>
+            <input required type="file" id="document" name="document" />
+          </p>
+        </div>
+        <div class="group-field">
+          <input required type="checkbox" id="updates" name="updates" value="yes" />
+          <label for="updates">Sign me up for email updates</label><br />
+        </div>
+        <div class="group-field">
+          <a href="../screens/form-step-2.html" class="start-button"
+            ><img
+              class="img-button"
+              src="../assets/images/back.png"
+              alt="Back Button"
+          /></a>
+          <input required type="submit" value="" class="button submit-button" />
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

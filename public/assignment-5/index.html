@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saylani form</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/font-family.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="layout">
+      <img class="center" src="https://dmhqppb4umb6.cloudfront.net/saylani-logo.png" alt="saylani-logo" />
+      <h1>Saylani Mass Training & Job Creation Program</h1>
+      <h2>Registration / Entry Test Form</h2>
+    </div>
+
+    <div class="form">
+      <form action="thank-you.html" method="GET">
+        <div class="block block-1">
+          <div class="column column-half column-half-1">
+            <p for="course">Select Your Course *</p>
+            <select name="course" id="course" required>
+              <option value="select-course">Select Course</option>
+              <option value="IT-Essential-Fsd">IT Essential Fsd</option>
+            </select>
+          </div>
+          <div class="column column-half column-half-2">
+            <p for="branch">Select Batch*</p>
+            <select name="branch" id="branch" required>
+              <option value="6">6</option>
+            </select>
+          </div>
+        </div>
+        <div class="block block-2">
+          <div class="column">
+            <input type="text" placeholder="Your Name*"  required/>
+            <p class="tooltip">Max characters allowed: 18</p>
+          </div>
+        </div>
+        <div class="block block-3">
+          <div class="column column-half column-half-1">
+            <p class="block-title">Date of Birth:*</p>
+            <input type="date" placeholder="mm dd yyyy"  required/>
+          </div>
+          <div class="column column-half column-half-2">
+            <p class="block-title">Age*</p>
+            <input type="number" placeholder="Age"  required/>
+          </div>
+        </div>
+        <div class="block block-4">
+          <div class="column">
+            <p class="block-title">Gender*</p>
+            <input class="radio-start" type="radio" value="Male"  required />Male
+            <input class="radio-end" type="radio" value="Female" disabled  required />Female
+          </div>
+        </div>
+        <div class="block block-5">
+          <div class="column">
+            <input type="number" placeholder="CNIC/B-FORM*" required />
+            <p class="tooltip">e.g 4220123456789</p>
+          </div>
+        </div>
+        <div class="block block-6">
+          <div class="column">
+            <input type="text" placeholder="Father's Name*"  required />
+          </div>
+        </div>
+        <div class="block block-7">
+          <div class="column">
+            <input type="number" placeholder="Father's/Guardian's CNIC*" required />
+            <p class="tooltip">e.g 4220123456789</p>
+          </div>
+        </div>
+        <div class="block block-8">
+          <div class="column">
+            <input type="text" placeholder="Full and Permanent Address*" required />
+          </div>
+        </div>
+        <div class="block block-9">
+          <div class="column">
+            <input type="number" placeholder="Cell Number*" required />
+            <p class="tooltip">e.g 03301234567</p>
+          </div>
+        </div>
+        <div class="block block-9">
+          <div class="column">
+            <input type="email" placeholder="Email*" required />
+            <p class="tooltip">Provide a valid, accessible email that we will use to contact you.</p>
+          </div>
+        </div>
+        <div class="block block-10">
+          <div class="column">
+            <p class="block-title">Last Qualification*</p>
+            <input class="radio-start" type="radio" value="None" required /><label>None</label>
+            <input class="radio-mid" type="radio" value="Matric" required /><label>Matric</label>
+            <input class="radio-mid" type="radio" value="Intermediate" required /><label>Intermediate
+              <input class="radio-mid" type="radio" value="Bachelor" required /><label>Bachelor</label>
+              <input class="radio-mid" type="radio" value="Master" required /><label>Master</label>
+              <input class="radio-end" type="radio" value="PhD" required /><label>PhD</label>
+          </div>
+        </div>
+        <div class="block block-11">
+          <div class="column">
+            <p class="block-title">
+              Upload your recent image (face front, without glasses and with a
+              single-colored background) *
+            </p>
+            <input type="file" required />
+            <p class="tooltip">Only png or jpg with size < 1mb is allowed</p>
+          </div>
+        </div>
+        <div class="block block-12">
+          <div class="column">
+            <p class="block-title">Availibility *</p>
+            <p class="block-title">
+              Drag and drop class timings mentioned below as per your availibility and
+              priority.
+            </p>
+          </div>
+        </div>
+        <div class="block block-13">
+          <div class="column">
+            <p class="block-title">Declaration Undertaking *</p>
+            <ol>
+              <li>
+                I hereby, solemnly declare that the data and facts mentioned herein
+                are true and correct to the best of my knowledge. Further, I will
+                abide by my all the establish and future regulation and policies of
+                SWIT
+              </li>
+              <li>
+                I hereby accept the responsibilites of the good conduct and guarantee
+                that I will not be involved in any other activity, polical or ethic,
+                but learning during my stay in the program.
+              </li>
+              <li>
+                Defiance will render my admission cancelled at any point in time.
+              </li>
+              <li>
+                Upon completion of course, I will complete the required project by
+                SWIT.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="block block-14">
+          <div class="column">
+            <input type="checkbox" value="" required />
+            <label>I agree with the above terms</label>
+          </div>
+        </div>
+        <div class="block block-15">
+          <div class="column">
+            <button type="submit">submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </form>
+</body>
+
+</html>

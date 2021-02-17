@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Step 1</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+
+  <body>
+    <a
+      href="https://classroom.google.com/u/0/c/MTk3MjE4NTQzNDk4/a/MjQ3NzAzMjcxMzA2/details"
+      >Reference</a
+    >
+    <div class="text-center" style="text-align: left">
+      <!-- <table>
+        <td bgcolor="#72a3de" class="header-tabs">Step 1: Account</td>
+        <td bgcolor="#cccccc" class="header-tabs">Step 2: Personal Details</td>
+        <td bgcolor="#cccccc" class="header-tabs">Step 3: Your Review</td>
+      </table> -->
+
+      <div class="header-tab">
+        <p class="header-tab-item active"><b>Step 1: Account</b></p>
+        <p class="header-tab-item inactive"><b>Step 2: Personal Details</b</p>
+        <p class="header-tab-item inactive"><b>Step 3: Your Review</b</p>
+      </div>
+
+      <form action="./form-step-2.html" method="GET">
+        <fieldset>
+          <legend>Account</legend>
+
+          <!-- <label for="email">Email Address:</label> -->
+          <div class="group-field">
+            <p><b>Email Address:</b></p>
+            <input required
+              class="input-style"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Email"
+            />
+          </div>
+          <!-- <label for="password">Password:</label> -->
+          <div class="group-field">
+          <p><b>Password:</b></p>
+          <input required
+            class="input-style"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter Password"
+            minlength="8"
+            
+          />
+          </div>
+          <!-- <label for=  "confirm-password">Confirm Password:</label> -->
+          <div class="group-field">    <p><b>Confirm Password:</b></p>
+          <input required
+            class="input-style"
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Confirm Password"
+            minlength="8"
+          />
+          </div>
+          <div class="group-field">
+            <a href="../index.html" class="start-button"
+              ><img
+                class="img-button"
+                src="../assets/images/back.png"
+                alt="Back Button"
+            /></a>
+            <input type="submit" value="" class="button next-button" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Step 2</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+  <a href="https://classroom.google.com/u/0/c/MTk3MjE4NTQzNDk4/a/MjQ3NzAzMjcxMzA2/details">Reference</a>
+  <div class="text-center" style="text-align: left">
+
+    <!-- <table>
+        <td bgcolor="#a4dd9e" class="header-tabs">Step 1: Account</td>
+        <td bgcolor="#72a3de" class="header-tabs">Step 2: Personal Details</td>
+        <td bgcolor="#cccccc" class="header-tabs">Step 3: Your Review</td>
+      </table> -->
+
+    <div class="header-tab">
+      <p class="header-tab-item done"><b>Step 1: Account</b></p>
+      <p class="header-tab-item active"><b>Step 2: Personal Details</b< /p>
+          <p class="header-tab-item inactive"><b>Step 3: Your Review</b< /p>
+    </div>
+
+    <form action="./form-step-3.html" method="GET">
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <!-- <label for="fname">First name:</label> -->
+        <div class="group-field">
+          <p><b>First Name:</b></p>
+          <input required class="input-style" type="text" id="fname" name="fname" placeholder="Enter First Name" />
+        </div>
+
+        <!-- <label for="lname">Last name:</label> -->
+        <div class="group-field">
+          <p><b>Last Name:</b></p>
+          <input required class="input-style" type="text" id="lname" name="lname" placeholder="Enter Last Name" />
+        </div>
+
+        <!-- <label for="cnic">CNIC:</label> -->
+        <div class="group-field">
+          <p><b>CNIC:</b></p>
+          <table>
+            <td border="1" class="cnic-box">
+              <input required class="input-style" type="text" id="cnic-1" name="cnic-1" maxlength="1" />
+            </td>
+            <td border="1" class="cnic-box">
+              <input required class="input-style" type="text" id="cnic-2" name="cnic-2" maxlength="1" />
+            </td>
+            <td border="1" class="cnic-box">
+              <input required class="input-style" type="text" id="cnic-3" name="cnic-3" maxlength="1" max="9" />
+            </td>
+            <td border="1" class="cnic-box">
+              <input required class="input-style" type="text" id="cnic-4" name="cnic-4" maxlength="1" max="9" />
+            </td>
+            <td border="1" class="cnic-box">
+              <input required class="input-style" type="text" id="cnic-5" name="cnic-5" maxlength="1" max="9" />
+            </td>
+            <td class="cnic-dash">-</td>
+            <td border="1" class="cnic-box">
+              <input required class="input-style" type="text" id="cnic-6" name="cnic-6" maxlength="1" max="9" />
+            </td>
+            <td border="1" class="cnic-box">
+              <input required class="input-style" type="text" id="cnic-7" name="cnic-7" maxlength="1" max="9" />
+            </td>
+            <td border="1" class="cnic-box">
+              <input required class="input-style" type="text" id="cnic-8" name="cnic-8" maxlength="1" max="9" />
+            </td>
+            <td border="1" class="cnic-box">
+              <input required class="input-style" type="text" id="cnic-9" name="cnic-9" maxlength="1" max="9" />
+            </td>
+            <td border="1" class="cnic-box">
+              <input required class="input-style" type="text" id="cnic-10" name="cnic-10" maxlength="1" max="9" />
+            </td>
+            <td border="1" class="cnic-box">
+              <input required class="input-style" type="text" id="cnic-11" name="cnic-11" maxlength="1" max="9" />
+            </td>
+            <td border="1" class="cnic-box">
+              <input required class="input-style" type="text" id="cnic-12" name="cnic-12" maxlength="1" max="9" />
+            </td>
+            <td class="cnic-dash">-</td>
+            <td border="1" class="cnic-box">
+              <input required class="input-style" type="text" id="cnic-13" name="cnic-13" maxlength="1" max="9" />
+            </td>
+          </table>
+        </div>
+        <div class="group-field">
+          <p><b>Social Link:</b></p>
+          <input required class="input-style" type="url" id="social-link" name="social-link"
+            placeholder="Enter Facebook/Linkedin profile link" />
+        </div>
+
+        <div class="group-field">
+          <a href="../screens/form-step-1.html" class="start-button"
+            ><img
+              class="img-button"
+              src="../assets/images/back.png"
+              alt="Back Button"
+          /></a>
+          <input type="submit" value="" class="button next-button" />
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

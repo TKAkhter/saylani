@@ -1,0 +1,105 @@
+/* To Hide Number Arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* End Here */
+
+.text-center {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 50%;
+}
+.hide-dots {
+  list-style: none;
+  padding: 0;
+}
+
+.img-button {
+  max-width: 100px;
+}
+
+.td.cnic-box,
+.cnic-box input {
+  max-width: 15px;
+  text-align: center;
+}
+
+cnic-box, .cnic-dash  {
+  padding-right: 2px;
+}
+
+.button.submit-button, .button.next-button {
+  width: 25%;
+  background-repeat: round;
+  background-color: transparent;
+  border: none;
+  padding: 8px 0;
+}
+
+.submit-button {
+  background-image: url(../assets/images/submit.png);
+}
+
+.next-button {
+  background-image: url(../assets/images/next.png);
+}
+
+.back-button {
+  background-image: url(../assets/images/next.png);
+}
+
+.header-tab {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-tab-item {
+  display: inline-block;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.group-field {
+  margin-top: 20px;
+}
+
+.header-tab {
+  margin-bottom: 10px;
+}
+
+.group-field p {
+  margin: 0;
+}
+
+input {
+  width: 80%;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  max-width: fit-content;
+}
+
+.inactive {
+  background-color: #cccccc;
+}
+
+.active {
+  background-color: #72a3de;
+}
+
+.done {
+  background-color: #a4dd9e;
+}
