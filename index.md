@@ -113,6 +113,7 @@
     <a class="button-links" target="_blank" href="./public/assignment-4/index.html">Assignment 4</a>
     <a class="button-links" target="_blank" href="./public/assignment-5/index.html">Assignment 5</a>
     <a class="button-links" target="_blank" href="./public/assignment-6/index.html">Assignment 6</a>
+    <a class="button-links" target="_blank" href="./public/assignment-7/index.html">Assignment 7</a>
   </div>
   <p id="load">Firebase SDK Loading&hellip;</p>
 
