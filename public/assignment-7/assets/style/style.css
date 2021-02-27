@@ -1,37 +1,150 @@
 body {
-  margin: 0;
-  background-color: #f2f2f2 !important;
+    margin: 0;
+    background-color: #f2f2f2 !important;
+    min-width: 320px;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal;
+    padding: 0;
+    color: #1d1d1f;
 }
-ul.nav-menu {
-  font-size: 14px;
-  background: rgba(0, 0, 0, 0.8);
-  min-height: 40px;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 10%;
-  margin: 0;
+
+.nav-menu {
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #1d1d1f;
+    font-style: normal;
+    list-style: none;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.8);
+    min-height: 40px;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0 10%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.section {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    color: #1d1d1f;
+    font-style: normal;
+    padding-bottom: 115px;
+    z-index: 1;
+    position: relative;
+    overflow: visible;
+    background-color: #f2f2f2;
+}
+
+.video-container {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #1d1d1f;
+    font-style: normal;
+    position: relative;
+    width: 461px;
+    height: 430px;
+    background-size: 461px 430px;
+    background-repeat: no-repeat;
+    background-image: url("../images/iphones-bg.jpg");
+    left: 50%;
+    margin-left: -230.5px;
+}
+
+.section-content {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #1d1d1f;
+    font-style: normal;
+    z-index: 1;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 692px;
+}
+
+.hero-copy {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #1d1d1f;
+    font-style: normal;
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 66.66667%;
+    max-width: 66.66667%;
+    padding-top: 45px;
+    text-align: center;
+}
+
+.hero-eyebrow-text {
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #1d1d1f;
+    font-size: 21px;
+    line-height: 1.19048;
+    font-weight: 600;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.hero-headline {
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #1d1d1f;
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin-top: 18px;
+}
+
+.hero-intro {
+    color: #1d1d1f;
+    font-style: normal;
+    --hero-top-offset: 0;
+    --hero-min-top-margin: 40px + var(--r-localnav-height);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    line-height: 1.19048;
+    font-weight: 600;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin-top: 29px;
+}
+
 .menu-item-tag {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
-.menu-item.icon,
-ul.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu-item.icon {
-  width: 16px;
-  height: 46px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 14px;
-  height: 46px;
-}
+
 .main-container {
-  padding-top: 50px;
+    padding-top: 50px;
 }
