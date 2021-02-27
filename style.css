@@ -1,0 +1,14 @@
+.border-image {
+    background: gold;
+    border: 50px solid transparent;	
+    border-image: url('./images/border-image.png');
+}
+.inline li {
+	/*display: inline;
+	background: brown;
+	margin: 15px;*/
+	font-size: 30px;
+	max-width: 300px;
+	list-style-image: url('./images/sqpurple.gif');
+	list-style-position: inside;
+}
