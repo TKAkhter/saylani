@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 20px;
+            padding-top: 0;
+            border: 1px solid black;
+        }
+
+        #nav {
+            border: 1px dotted black;
+        }
+
+        .container {
+            padding-left: 0;
+            max-width: 800px;
+        }
+
+        .page {
+            margin-left: 20px;
+            border: 0;
+            background-color: lightgray;
+            padding-left: 0;
+        }
+
+        div#nav {
+            margin-top: 50px;
+        }
+
+        .article {
+            border: 1px dotted black;
+            min-height: 80px;
+            margin: 10px 0;
+        }
+
+        .header {
+            margin: 0 30px;
+        }
+
+        .article {}
+
+        .content {
+            margin: 10px 30px;
+            width: 50%;
+            margin-right: 0;
+        }
+
+        .sidebar,
+        .footer {
+            margin: 0 30px;
+        }
+
+        .sidebar {
+            width: 31%;
+            margin: 10px;
+            padding-right: 5px;
+            min-height: 260px;
+        }
+
+        .sidebar,
+        .content {
+            display: inline-grid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        &#60;body&#62;
+        <div class="page">
+            &#60;div class="page"&#62;
+            <div class="header">
+                &#60;div id="header"&#62;
+                <div id="nav">
+                    <nav>
+                        &#60;div id="nav"&#62;
+                    </nav>
+                </div>
+            </div>
+            <div class="content">
+                &#60;div class="content"&#62;
+                <div class="article">
+                    &#60;div class="article"&#62;
+                </div>
+                <div class="article">
+                    &#60;div class="article"&#62;
+                </div>
+            </div>
+            <div class="sidebar">
+                &#60;div class="sidebar"&#62;
+            </div>
+            <div class="footer">
+                &#60;div class="footer"&#62;
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
