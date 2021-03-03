@@ -35,7 +35,7 @@
 
     #message {
       background: white;
-      max-width: 360px;
+      max-width: 1200px;
       margin: 100px auto 16px;
       padding: 32px 24px;
       border-radius: 3px;
@@ -62,13 +62,11 @@
     }
 
     #message a {
-      display: block;
+      flex: 1;
       text-align: center;
-      background: #039be5;
       text-transform: uppercase;
       text-decoration: none;
-      color: white;
-      padding: 16px;
+      color: rgba(0, 0, 0, 0.87);
       border-radius: 4px;
     }
 
@@ -81,6 +79,18 @@
       color: rgba(0, 0, 0, 0.4);
       text-align: center;
       font-size: 13px;
+    }
+
+    a.button-links.main.assignment {
+      min-width: 250px;
+      min-height: 300px;
+      margin: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     @media (max-width: 600px) {
@@ -97,8 +107,59 @@
       }
     }
 
-    .button-links {
-      margin: 20px 0;
+    .buttons {
+      justify-content: space-around;
+    }
+
+    .assignment {
+      padding: 0;
+      flex-direction: column;
+      display: flex;
+      justify-content: flex-end;
+      background-size: cover !important;
+    }
+
+    .assignment div {
+      background: #f5f5f5;
+      opacity: 0.9;
+      padding: 10px;
+    }
+
+    .assignment-1 {
+      background: url('./assets/images/assignment-1.png');
+
+    }
+
+    .assignment-2 {
+      background: url('./assets/images/assignment-2.png');
+    }
+
+    .assignment-3 {
+      background: url('./assets/images/assignment-3.png');
+    }
+
+    .assignment-4 {
+      background: url('./assets/images/assignment-4.png');
+    }
+
+    .assignment-5 {
+      background: url('./assets/images/assignment-5.png');
+    }
+
+    .assignment-6 {
+      background: url('./assets/images/assignment-6.png');
+    }
+
+    .assignment-7 {
+      background: url('./assets/images/assignment-7.png');
+    }
+
+    .assignment-8 {
+      background: url('./assets/images/assignment-8.png');
+    }
+
+    .assignment-9 {
+      background: url('./assets/images/assignment-9.png');
     }
   </style>
 </head>
@@ -108,15 +169,62 @@
     <h2>Welcome!</h2>
     <h1>Saylani Assignments</h1>
     <p>Please click on button to see assignments</p>
-    <a class="button-links main" target="_blank" href="./assignment-1/index.html">Assignment 1</a>
-    <a class="button-links main" target="_blank" href="./assignment-2/index.html">Assignment 2</a>
-    <a class="button-links main" target="_blank" href="./assignment-3/index.html">Assignment 3</a>
-    <a class="button-links main" target="_blank" href="./assignment-4/index.html">Assignment 4</a>
-    <a class="button-links main" target="_blank" href="./assignment-5/index.html">Assignment 5</a>
-    <a class="button-links main" target="_blank" href="./assignment-6/index.html">Assignment 6</a>
-    <a class="button-links main" target="_blank" href="./assignment-7/index.html">Assignment 7</a>
-    <a class="button-links main" target="_blank" href="./assignment-8/index.html">Assignment 8</a>
-    <a class="button-links main" target="_blank" href="./assignment-9/index.html">Assignment 9</a>
+    <div class="buttons">
+      <a class="button-links main assignment assignment-1" target="_blank" href="./assignment-1/index.html">
+        <div>
+          <h3>Assignment 1</h3>
+          <p>Create Resume</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-2" target="_blank" href="./assignment-2/index.html">
+        <div>
+          <h3>Assignment 2</h3>
+          <p>5 pages using relative link, absolute link and page link</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-3" target="_blank" href="./assignment-3/index.html">
+        <div>
+          <h3>Assignment 3</h3>
+          <p>Periodic Table</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-4" target="_blank" href="./assignment-4/index.html">
+        <div>
+          <h3>Assignment 4</h3>
+          <p>Multiple steps Forms</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-5" target="_blank" href="./assignment-5/index.html">
+        <div>
+          <h3>Assignment 5</h3>
+          <p>Make replica of forms.saylaniwelfare.com</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-6" target="_blank" href="./assignment-6/index.html">
+        <div>
+          <h3>Assignment 6</h3>
+          <p>DAWN News Page</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-7" target="_blank" href="./assignment-7/index.html">
+        <div>
+          <h3>Assignment 7</h3>
+          <p>Apple HomePage</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-8" target="_blank" href="./assignment-8/index.html">
+        <div>
+          <h3>Assignment 8</h3>
+          <p>Class HomePage Task</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-9" target="_blank" href="./assignment-9/index.html">
+        <div>
+          <h3>Assignment 9</h3>
+          <p>Pokemon HomePage</p>
+        </div>
+      </a>
+    </div>
   </div>
   <p id="load">Firebase SDK Loading&hellip;</p>
 
