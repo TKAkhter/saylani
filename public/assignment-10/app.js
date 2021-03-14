@@ -134,14 +134,14 @@ document.write('<p>The remainder is : ' + number + '</p>');
 // }
 
 // Chapter 5 Task 6 ====================
-// var celsius = +prompt("Enter temperature celsius");
-// var fahrenheit = +prompt("Enter temperature fahrenheit");
-// document.write('<p>' + celsius + '<sup>o</sup>C is ' + ((celsius*(9/5))+32) + 'F</p>');
-// document.write('<p>' + fahrenheit + '<sup>o</sup>F is ' + ((fahrenheit-32)*(5/9)) + 'C</p>');
+var celsius = +prompt("Enter temperature in celsius");
+var fahrenheit = +prompt("Enter temperature in fahrenheit");
+document.write('<p>' + celsius + '<sup>o</sup>C is ' + ((celsius*(9/5))+32) + 'F</p>');
+document.write('<p>' + fahrenheit + '<sup>o</sup>F is ' + ((fahrenheit-32)*(5/9)) + 'C</p>');
 
 // Chapter 5 Task 7-13 ====================
 
 // Chapter 6 Task 1 ====================
-var number = +prompt("Enter number");
+// var number = +prompt("Enter number");
 
 
