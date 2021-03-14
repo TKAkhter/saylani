@@ -160,6 +160,9 @@
     .assignment-9 {
       background: url('./public/assets/images/assignment-9.png');
     }
+    .assignment-10 {
+      background: #ffa100;
+    }
   </style>
 </head>
 
@@ -220,6 +223,12 @@
       <a class="button-links main assignment assignment-9" target="_blank" href="./public/assignment-9/index.html">
         <div>
           <h3>Assignment 9</h3>
+          <p>Pokemon HomePage</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-10" target="_blank" href="./public/assignment-10/index.html">
+        <div>
+          <h3>Assignment 10</h3>
           <p>Pokemon HomePage</p>
         </div>
       </a>
