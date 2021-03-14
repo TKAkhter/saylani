@@ -122,3 +122,26 @@ number--;
 document.write('<p>Value after decrement is: ' + number + '</p>');
 number = number % 3;
 document.write('<p>The remainder is : ' + number + '</p>');
+
+// Chapter 5 Task 4 ====================
+// var price = +prompt("Enter ticket price")
+// document.write('<p>Total cost of 5 tickets to a movie is ' + price * 5 + 'PKR</p>');
+
+// Chapter 5 Task 5 ====================
+// var table = +prompt("Enter table number");
+// for (var i = 1; i <= 10; i++) {
+//     document.write('<p>' + table + ' x ' + i + ' = ' + table * i + '</p>');
+// }
+
+// Chapter 5 Task 6 ====================
+// var celsius = +prompt("Enter temperature celsius");
+// var fahrenheit = +prompt("Enter temperature fahrenheit");
+// document.write('<p>' + celsius + '<sup>o</sup>C is ' + ((celsius*(9/5))+32) + 'F</p>');
+// document.write('<p>' + fahrenheit + '<sup>o</sup>F is ' + ((fahrenheit-32)*(5/9)) + 'C</p>');
+
+// Chapter 5 Task 7-13 ====================
+
+// Chapter 6 Task 1 ====================
+var number = +prompt("Enter number");
+
+
