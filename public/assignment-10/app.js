@@ -145,3 +145,56 @@ document.write('<p>' + fahrenheit + '<sup>o</sup>F is ' + ((fahrenheit-32)*(5/9)
 // var number = +prompt("Enter number");
 
 
+// Objective 1
+var arr = [];
+console.log ('============= Objective 1');
+console.log(arr);
+
+// Objective 2
+var arr = new Array();
+console.log ('============= Objective 2');
+console.log(arr);
+
+// Objective 3
+var arr = ['string1'];
+console.log ('============= Objective 3');
+console.log(arr);
+
+// Objective 4
+var arr = [1, 2, 3];
+console.log ('============= Objective 4');
+console.log(arr);
+
+// Objective 5
+var arr = [true, false];
+console.log ('============= Objective 5');
+console.log(arr);
+
+// Objective 6
+var arr = [1, 'two', true];
+console.log ('============= Objective 6');
+console.log(arr);
+
+// Objective 7
+var qualification = ['SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M.Phil.', 'PhD'];
+console.log ('============= Objective 7');
+console.log(qualification);
+
+// Objective 8
+console.log ('============= Objective 8');
+var students = ['Micheal', 'John', 'Tony'];
+
+var scores = [320, 230, 480];
+
+var totalMarks = 500;
+
+students.map((value, index) => {
+    console.log('Score of ' + value + ' is ' + scores[index] + '. Percentage: ' + (scores[index] / totalMarks) * 100 + '%');
+})
+
+// Objective 9
+console.log ('============= Objective 9');
+colors = ['red','blue','green'];
+var ask = prompt('What color you want to add at beginning');
+colors.unshift(ask);
+console.log(colors);
