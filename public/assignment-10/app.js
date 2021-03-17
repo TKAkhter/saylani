@@ -110,18 +110,18 @@
 // document.write('modulus of ' + a + ' and ' + b + ' is ' + c + '<br>');
 
 // Chapter 5 Task 3 ====================
-var number;
-document.write('<p>Value after variable declaration is: ' + number + '</p>');
-number = 5;
-document.write('<p>Initial value: 5</p>');
-number++;
-document.write('<p>Value after increment is: ' + number + '</p>');
-number = number + 7;
-document.write('<p>Value after addition is: ' + number + '</p>');
-number--;
-document.write('<p>Value after decrement is: ' + number + '</p>');
-number = number % 3;
-document.write('<p>The remainder is : ' + number + '</p>');
+// var number;
+// document.write('<p>Value after variable declaration is: ' + number + '</p>');
+// number = 5;
+// document.write('<p>Initial value: 5</p>');
+// number++;
+// document.write('<p>Value after increment is: ' + number + '</p>');
+// number = number + 7;
+// document.write('<p>Value after addition is: ' + number + '</p>');
+// number--;
+// document.write('<p>Value after decrement is: ' + number + '</p>');
+// number = number % 3;
+// document.write('<p>The remainder is : ' + number + '</p>');
 
 // Chapter 5 Task 4 ====================
 // var price = +prompt("Enter ticket price")
@@ -134,67 +134,151 @@ document.write('<p>The remainder is : ' + number + '</p>');
 // }
 
 // Chapter 5 Task 6 ====================
-var celsius = +prompt("Enter temperature in celsius");
-var fahrenheit = +prompt("Enter temperature in fahrenheit");
-document.write('<p>' + celsius + '<sup>o</sup>C is ' + ((celsius*(9/5))+32) + 'F</p>');
-document.write('<p>' + fahrenheit + '<sup>o</sup>F is ' + ((fahrenheit-32)*(5/9)) + 'C</p>');
+// var celsius = +prompt("Enter temperature in celsius");
+// var fahrenheit = +prompt("Enter temperature in fahrenheit");
+// document.write('<p>' + celsius + '<sup>o</sup>C is ' + ((celsius * (9 / 5)) + 32) + 'F</p>');
+// document.write('<p>' + fahrenheit + '<sup>o</sup>F is ' + ((fahrenheit - 32) * (5 / 9)) + 'C</p>');
 
 // Chapter 5 Task 7-13 ====================
 
-// Chapter 6 Task 1 ====================
+// Chapter 6-9 Task 1 ====================
 // var number = +prompt("Enter number");
+// document.write('<h3>Result:</h3><p>The Value of a is: ' + number + '</p><p>..............................</p>');
+// document.write('<br><p>The Value of ++a is: ' + ++number + '</p>');
+// document.write('<p>Now the Value of a is: ' + number + '</p>');
+// document.write('<br><p>The Value of a++ is: ' + number++ + '</p>');
+// document.write('<p>Now the Value of a is: ' + number + '</p>');
+// document.write('<br><p>The Value of --a is: ' + --number + '</p>');
+// document.write('<p>Now the Value of a is: ' + number + '</p>');
+// document.write('<br><p>The Value of a-- is: ' + number-- + '</p>');
+// document.write('<p>Now the Value of a is: ' + number + '</p>');
 
+// Chapter 6-9 Task 2 ====================
+// var a = 2, b = 1;
+// var result = --a - --b + ++b + b--;
+// console.log(a + ' => value of a');
+// console.log(b + ' => value of b');
+// console.log('Equation => --a - --b + ++b + b--');
+// console.log('Ans => '+(--a) + ' => pre-decrement of a');
+// console.log('Ans => '+(--a - --b) + ' => pre-decrement of a - pre-decrement of b');
+// console.log('Ans => '+(--a - --b + ++b) + ' => pre-decrement of a - pre-decrement of b + pre-increment of b');
+// console.log('Ans => '+(--a - --b + ++b + b--) + ' => pre-decrement of a - pre-decrement of b + pre-increment of b - post-decrement of b');
+// console.log(result + ' => value of result');
 
-// Objective 1
-var arr = [];
-console.log ('============= Objective 1');
-console.log(arr);
+// Chapter 6-9 Task 3 ====================
+// var user = prompt("Hello, What's your name");
+// alert('Hello ' + user + ' Welcome!');
 
-// Objective 2
-var arr = new Array();
-console.log ('============= Objective 2');
-console.log(arr);
+// Chapter 6-9 Task 4-6 ====================
 
-// Objective 3
-var arr = ['string1'];
-console.log ('============= Objective 3');
-console.log(arr);
+// Chapter 9-11 Task 1 ====================
+// var city = prompt("Your city");
+// if (city == 'karachi') {
+//     alert('Welcome to city of lights');
+// } else {
+//     alert('Welcome');
+// }
 
-// Objective 4
-var arr = [1, 2, 3];
-console.log ('============= Objective 4');
-console.log(arr);
+// Chapter 9-11 Task 2 ====================
+// var gender = prompt("Your gender");
+// if (gender == 'male') {
+//     alert('Good Morning Sir');
+// } else if (gender == 'female') {
+//     alert("Good Morning Ma'am");
+// }
+// else {
+//     alert("Good Morning");
+// }
 
-// Objective 5
-var arr = [true, false];
-console.log ('============= Objective 5');
-console.log(arr);
+// Chapter 9-11 Task 3-11 ====================
 
-// Objective 6
-var arr = [1, 'two', true];
-console.log ('============= Objective 6');
-console.log(arr);
+// Chapter 12-13 Task 1 ====================
+// var input = prompt("Enter number or text");
+// var condition = input.charCodeAt(0);
+// if (condition >= 48 && condition <= 57) {
+//     alert('Input starts with Number');
+// }
+// else if (condition >= 65 && condition <= 90) {
+//     alert('Input starts with Uppercase');
+// }
+// else if (condition >= 97 && condition <= 122) {
+//     alert('Input starts with Lowercase');
+// } else {
+//     alert('Input starts with Special character');
+// }
 
-// Objective 7
-var qualification = ['SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M.Phil.', 'PhD'];
-console.log ('============= Objective 7');
-console.log(qualification);
+// Chapter 12-13 Task 2-7 ====================
 
-// Objective 8
-console.log ('============= Objective 8');
-var students = ['Micheal', 'John', 'Tony'];
+// Chapter 14-16 Task 1  ====================
+// var arr = [];
+// console.log('============= Objective 1');
+// console.log(arr);
 
-var scores = [320, 230, 480];
+// Chapter 14-16 Task 2 ====================
+// var arr = new Array();
+// console.log('============= Objective 2');
+// console.log(arr);
 
-var totalMarks = 500;
+// Chapter 14-16 Task 3 ====================
+// var arr = ['string1'];
+// console.log('============= Objective 3');
+// console.log(arr);
 
-students.map((value, index) => {
-    console.log('Score of ' + value + ' is ' + scores[index] + '. Percentage: ' + (scores[index] / totalMarks) * 100 + '%');
-})
+// Chapter 14-16 Task 4 ====================
+// var arr = [1, 2, 3];
+// console.log('============= Objective 4');
+// console.log(arr);
 
-// Objective 9
-console.log ('============= Objective 9');
-colors = ['red','blue','green'];
+// Chapter 14-16 Task 5 ====================
+// var arr = [true, false];
+// console.log('============= Objective 5');
+// console.log(arr);
+
+// Chapter 14-16 Task 6 ====================
+// var arr = [1, 'two', true];
+// console.log('============= Objective 6');
+// console.log(arr);
+
+// Chapter 14-16 Task 7 ====================
+// var qualification = ['SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M.Phil.', 'PhD'];
+// console.log('============= Objective 7');
+// console.log(qualification);
+
+// Chapter 14-16 Task 8 ====================
+// console.log('============= Objective 8');
+// var students = ['Micheal', 'John', 'Tony'];
+
+// var scores = [320, 230, 480];
+
+// var totalMarks = 500;
+
+// students.map((value, index) => {
+//     console.log('Score of ' + value + ' is ' + scores[index] + '. Percentage: ' + (scores[index] / totalMarks) * 100 + '%');
+// })
+
+// Chapter 14-16 Task 9 ====================
+// console.log('============= Objective 9');
+colors = ['red', 'blue', 'green'];
+console.log(colors);
 var ask = prompt('What color you want to add at beginning');
 colors.unshift(ask);
 console.log(colors);
+var ask = prompt('What color you want to add at end');
+colors.push(ask);
+console.log(colors);
+var ask = prompt('Type two colors separated by comma ( , ) to add at beginning in descending order');
+ask = ask.split(',');
+ask.map((value) => {
+    colors.unshift(value);
+})
+console.log(colors);
+colors.shift();
+console.log(colors);
+colors.pop();
+console.log(colors);
+var ask = prompt('Which color you want to add?');
+var index = +prompt('Which place this color needs to be added in array');
+colors.splice(index-1, 0, ask);
+console.log(colors);
+
+// Chapter 14-16 Task 10-15 ====================/
