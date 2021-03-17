@@ -258,27 +258,27 @@
 
 // Chapter 14-16 Task 9 ====================
 // console.log('============= Objective 9');
-colors = ['red', 'blue', 'green'];
-console.log(colors);
-var ask = prompt('What color you want to add at beginning');
-colors.unshift(ask);
-console.log(colors);
-var ask = prompt('What color you want to add at end');
-colors.push(ask);
-console.log(colors);
-var ask = prompt('Type two colors separated by comma ( , ) to add at beginning in descending order');
-ask = ask.split(',');
-ask.map((value) => {
-    colors.unshift(value);
-})
-console.log(colors);
-colors.shift();
-console.log(colors);
-colors.pop();
-console.log(colors);
-var ask = prompt('Which color you want to add?');
-var index = +prompt('Which place this color needs to be added in array');
-colors.splice(index-1, 0, ask);
-console.log(colors);
+// colors = ['red', 'blue', 'green'];
+// console.log(colors);
+// var ask = prompt('What color you want to add at beginning');
+// colors.unshift(ask);
+// console.log(colors);
+// var ask = prompt('What color you want to add at end');
+// colors.push(ask);
+// console.log(colors);
+// var ask = prompt('Type two colors separated by comma ( , ) to add at beginning in descending order');
+// ask = ask.split(',');
+// ask.map((value) => {
+//     colors.unshift(value);
+// })
+// console.log(colors);
+// colors.shift();
+// console.log(colors);
+// colors.pop();
+// console.log(colors);
+// var ask = prompt('Which color you want to add?');
+// var index = +prompt('Which place this color needs to be added in array');
+// colors.splice(index-1, 0, ask);
+// console.log(colors);
 
 // Chapter 14-16 Task 10-15 ====================/
