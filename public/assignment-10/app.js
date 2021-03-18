@@ -211,41 +211,41 @@
 
 // Chapter 14-16 Task 1  ====================
 // var arr = [];
-// console.log('============= Objective 1');
+// console.log('============= Chapter 14-16 Task 1');
 // console.log(arr);
 
 // Chapter 14-16 Task 2 ====================
 // var arr = new Array();
-// console.log('============= Objective 2');
+// console.log('============= Chapter 14-16 Task 2');
 // console.log(arr);
 
 // Chapter 14-16 Task 3 ====================
 // var arr = ['string1'];
-// console.log('============= Objective 3');
+// console.log('============= Chapter 14-16 Task 3');
 // console.log(arr);
 
 // Chapter 14-16 Task 4 ====================
 // var arr = [1, 2, 3];
-// console.log('============= Objective 4');
+// console.log('============= Chapter 14-16 Task 4');
 // console.log(arr);
 
 // Chapter 14-16 Task 5 ====================
 // var arr = [true, false];
-// console.log('============= Objective 5');
+// console.log('============= Chapter 14-16 Task 5');
 // console.log(arr);
 
 // Chapter 14-16 Task 6 ====================
 // var arr = [1, 'two', true];
-// console.log('============= Objective 6');
+// console.log('============= Chapter 14-16 Task 6');
 // console.log(arr);
 
 // Chapter 14-16 Task 7 ====================
 // var qualification = ['SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M.Phil.', 'PhD'];
-// console.log('============= Objective 7');
+// console.log('============= Chapter 14-16 Task 7');
 // console.log(qualification);
 
 // Chapter 14-16 Task 8 ====================
-// console.log('============= Objective 8');
+// console.log('============= Chapter 14-16 Task 8');
 // var students = ['Micheal', 'John', 'Tony'];
 
 // var scores = [320, 230, 480];
@@ -257,7 +257,7 @@
 // })
 
 // Chapter 14-16 Task 9 ====================
-// console.log('============= Objective 9');
+// console.log('============= Chapter 14-16 Task 9');
 // colors = ['red', 'blue', 'green'];
 // console.log(colors);
 // var ask = prompt('What color you want to add at beginning');
@@ -281,4 +281,50 @@
 // colors.splice(index-1, 0, ask);
 // console.log(colors);
 
-// Chapter 14-16 Task 10-15 ====================/
+// Chapter 14-16 Task 10 ====================/
+// console.log('============= Chapter 14-16 Task 10');
+// var studentsScore = [320,230,480,120];
+// console.log(studentsScore);
+// console.log(studentsScore.sort());
+
+// Chapter 14-16 Task 11 ====================/
+// console.log('============= Chapter 14-16 Task 11');
+// var cities = ['Karachi','Lahore','Islamabad','Quetta','Peshawar'];
+// var selectedCities = cities.splice(2,2);
+// console.log(cities);
+// console.log(selectedCities);
+
+// Chapter 14-16 Task 12 ====================/
+console.log('============= Chapter 14-16 Task 12');
+var arr = ['This ', ' is ', ' my ', ' cat'];
+console.log(arr);
+console.log(arr.join(''));
+
+// Chapter 14-16 Task 13 ====================/
+console.log('============= Chapter 14-16 Task 13');
+var arr = ['Keyboard', 'Mouse', 'Printer', 'Monitor'];
+var out = console.log(arr);
+arr.map((index) => {
+    console.log('Out: \n' + index);
+    arr.unshift();
+})
+
+// Chapter 14-16 Task 14 ====================/
+console.log('============= Chapter 14-16 Task 14');
+var arr = ['Keyboard', 'Mouse', 'Printer', 'Monitor'];
+var out = console.log(arr);
+var i;
+for (i = 0; i <= arr.length-1; i++) {
+    console.log(arr[arr.length-1 - i]);
+}
+
+// Chapter 14-16 Task 15 ====================/
+console.log('============= Chapter 14-16 Task 15');
+var manufacturers = ['Apple', 'Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
+var out = '<label for="manufacturers">Choose a manufacturer:</label><select name="cars" id="cars">';
+manufacturers.map((index) => {
+    out += '<option value="' + index + '">' + index + '</option>';
+})
+out += '</select>';
+
+document.write(out);
