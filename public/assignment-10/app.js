@@ -295,36 +295,127 @@
 // console.log(selectedCities);
 
 // Chapter 14-16 Task 12 ====================/
-console.log('============= Chapter 14-16 Task 12');
-var arr = ['This ', ' is ', ' my ', ' cat'];
-console.log(arr);
-console.log(arr.join(''));
+// console.log('============= Chapter 14-16 Task 12');
+// var arr = ['This ', ' is ', ' my ', ' cat'];
+// console.log(arr);
+// console.log(arr.join(''));
 
-// Chapter 14-16 Task 13 ====================/
-console.log('============= Chapter 14-16 Task 13');
-var arr = ['Keyboard', 'Mouse', 'Printer', 'Monitor'];
-var out = console.log(arr);
-arr.map((index) => {
-    console.log('Out: \n' + index);
-    arr.unshift();
-})
+// // Chapter 14-16 Task 13 ====================/
+// console.log('============= Chapter 14-16 Task 13');
+// var arr = ['Keyboard', 'Mouse', 'Printer', 'Monitor'];
+// var out = console.log(arr);
+// arr.map((index) => {
+//     console.log('Out: \n' + index);
+//     arr.unshift();
+// })
 
 // Chapter 14-16 Task 14 ====================/
-console.log('============= Chapter 14-16 Task 14');
-var arr = ['Keyboard', 'Mouse', 'Printer', 'Monitor'];
-var out = console.log(arr);
-var i;
-for (i = 0; i <= arr.length-1; i++) {
-    console.log(arr[arr.length-1 - i]);
+// console.log('============= Chapter 14-16 Task 14');
+// var arr = ['Keyboard', 'Mouse', 'Printer', 'Monitor'];
+// var out = console.log(arr);
+// var i;
+// for (i = 0; i <= arr.length-1; i++) {
+//     console.log(arr[arr.length-1 - i]);
+// }
+
+// // Chapter 14-16 Task 15 ====================/
+// console.log('============= Chapter 14-16 Task 15');
+// var manufacturers = ['Apple', 'Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
+// var out = '<label for="manufacturers">Choose a manufacturer:</label><select name="cars" id="cars">';
+// manufacturers.map((index) => {
+//     out += '<option value="' + index + '">' + index + '</option>';
+// })
+// out += '</select>';
+
+// document.write(out);
+
+// Chapter 21-25 Task 1 ====================/
+// var fname = prompt('Enter First Name');
+// var lname = prompt('Enter Last Name');
+// alert('Hello! ' + fname + ' ' + lname);
+
+// Chapter 21-25 Task 2 ====================/
+// var fname = prompt('Enter Mobile');
+// alert('My Favorite phone is: ' + fname + '\n Length of String: ' + fname.length);
+
+// Chapter 21-25 Task 3 ====================/
+// var fname = prompt('Enter Mobile');
+// alert('My Favorite phone is: ' + fname + '\n Length of String: ' + fname.length);
+
+// Chapter 21-25 Task 4-6 ====================/
+// var fname = prompt('Enter First Name');
+// var lname = prompt('Enter Last Name');
+// alert('Hello! '.concat(fname).concat(' ').concat(lname));
+
+// Chapter 21-25 Task 7-10 ====================/
+// var fname = prompt('Enter Word');
+// alert('Hello! '+ fname.toLowerCase());
+
+// Chapter 21-25 Task 11-13 ====================/
+// var uname = prompt('Enter Username');
+// var i, charUname;
+// for (i = 0; i < uname.length; i++) {
+//     charUname = uname.charCodeAt(i);
+//     console.log(charUname);
+//     if (charUname < 48) {
+//         alert('Invalid Character, try again');
+//         break;
+//     }else if ( charUname < 65 && charUname > 57) {
+//         alert('Invalid Character, try again');
+//         break;
+//     }else if (charUname < 97 && charUname > 90) {
+//         alert('Invalid Character, try again');
+//         break;
+//     }else if(charUname > 122){
+//         alert('Invalid Character, try again');
+//         break;
+//     }
+// }
+// Chapter 21-25 Task 14-18 ====================/
+// var string = 'The quick brown fox jumps over the lazy dog.';
+
+// string = string.toLowerCase();
+
+// var count = (string.match(/the/g) || []).length;
+
+// alert(count);
+
+// Chapter 17-20 Task 1 ====================/
+// var arr1 = [], arr2 = []
+
+// Chapter 17-20 Task 2 ====================/
+// var arr = [[0,1,2,3],[1,0,1,2],[2,1,0,1]];
+
+// for (i=0;i<1;i++) {
+//     for (j=0;j<3;j++) {
+//         document.write('<p>'+arr[j]+'</p>');
+//         console.log(arr[j]);
+//     }
+//     document.write('<br>');
+// }
+
+// Chapter 17-20 Task 2 ====================/
+// var i;
+// for (i = 1; i <= 10; i++) {
+//     document.write('<p>'+i+'</p>');
+// }
+
+// Chapter 17-20 Task 3 ====================/
+// var table = +prompt("Enter table number");
+// for (var i = 1; i <= 10; i++) {
+//     document.write('<p>' + table + ' x ' + i + ' = ' + table * i + '</p>');
+// }
+
+
+// Chapter 17-20 Task 4-8 ====================/
+var arr = [24, 53, 78, 91, 12];
+document.write('<p>Array Items:' + arr + '</p><p>Largest Number is ' + Math.max.apply(Math, arr) + '</p>');
+
+// Chapter 17-20 Task 9 ====================/
+var arr = [24, 53, 78, 91, 12];
+document.write('<p>Array Items:' + arr + '</p><p>Largest Number is ' + Math.min.apply(Math, arr) + '</p>');
+
+// Chapter 17-20 Task 10 ====================/
+for (var i = 5; i <= 100; i += 5) {
+    document.write(i+ ', ');
 }
-
-// Chapter 14-16 Task 15 ====================/
-console.log('============= Chapter 14-16 Task 15');
-var manufacturers = ['Apple', 'Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
-var out = '<label for="manufacturers">Choose a manufacturer:</label><select name="cars" id="cars">';
-manufacturers.map((index) => {
-    out += '<option value="' + index + '">' + index + '</option>';
-})
-out += '</select>';
-
-document.write(out);
