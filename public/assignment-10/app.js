@@ -408,14 +408,94 @@
 
 
 // Chapter 17-20 Task 4-8 ====================/
-var arr = [24, 53, 78, 91, 12];
-document.write('<p>Array Items:' + arr + '</p><p>Largest Number is ' + Math.max.apply(Math, arr) + '</p>');
+// var arr = [24, 53, 78, 91, 12];
+// document.write('<p>Array Items:' + arr + '</p><p>Largest Number is ' + Math.max.apply(Math, arr) + '</p>');
 
 // Chapter 17-20 Task 9 ====================/
-var arr = [24, 53, 78, 91, 12];
-document.write('<p>Array Items:' + arr + '</p><p>Largest Number is ' + Math.min.apply(Math, arr) + '</p>');
+// var arr = [24, 53, 78, 91, 12];
+// document.write('<p>Array Items:' + arr + '</p><p>Largest Number is ' + Math.min.apply(Math, arr) + '</p>');
 
 // Chapter 17-20 Task 10 ====================/
-for (var i = 5; i <= 100; i += 5) {
-    document.write(i+ ', ');
-}
+// for (var i = 5; i <= 100; i += 5) {
+//     document.write(i+ ', ');
+// }
+
+
+// Chapter 26-30 Task 1 ====================/
+// var input = +prompt("Enter number");
+// document.write('Number: ' + input + '<br>');
+// document.write('round off value: ' + Math.round(input, 2) + '<br>');
+// document.write('Floor value: ' + Math.floor(input) + '<br>');
+// document.write('Ceil value: ' + Math.ceil(input) + '<br>');
+
+// Chapter 26-30 Task 2 ====================/
+// var input = +prompt("Enter number");
+// document.write('Number: ' + input + '<br>');
+// document.write('round off value: ' + Math.round(input, 2) + '<br>');
+// document.write('Floor value: ' + Math.floor(input) + '<br>');
+// document.write('Ceil value: ' + Math.ceil(input) + '<br>');
+
+// Chapter 26-30 Task 3 ====================/
+// var input = +prompt("Enter number");
+// document.write('Number: ' + Math.abs(input) + '<br>');
+
+// Chapter 26-30 Task 4 ====================/
+// document.write('Random dice value: ' + Math.floor(Math.random()*7) + '<br>');
+
+// Chapter 26-30 Task 5 ====================/
+// if (Math.floor(Math.random() * 10) % 2 == 0) {
+//     document.write('Random coin value: Heads <br>');
+// } else {
+//     document.write('Random coin value: Tails <br>');
+// }
+
+// Chapter 26-30 Task 6 ====================/
+// document.write('random number between 1 and 100: ' + Math.floor(Math.random()*101) + '<br>');
+
+// Chapter 26-30 Task 7 ====================/
+// var input = prompt("Enter your weight in kilograms");
+// var number = input.slice(0,4); 
+// document.write('The weight of user is ' + number + ' kilograms');
+
+// Chapter 26-30 Task 8 ====================/
+// var input = +prompt("Enter number");
+// var rand = Math.floor(Math.random() * 11);
+// console.log(rand);
+// if (rand == input) {
+//     document.write('Congratulations you guess correct!<br>');
+// } else {
+//     document.write('Incorrect!<br>');
+// }
+
+// Chapter 31-34 Task 1 ====================/
+// var date = new Date;
+// document.write(date);
+
+// Chapter 31-34 Task 2 ====================/
+// var monthArray = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+// var date = new Date;
+// alert('Current Month: '+ monthArray[date.getMonth()]);
+
+// Chapter 31-34 Task 3 ====================/
+// var monthArray = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat','Sun']
+// var date = new Date;
+// alert('Current Month: '+ monthArray[date.getDay()]);
+
+// Chapter 31-34 Task 3 ====================/
+// var monthArray = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+// var date = new Date;
+// if(date.getDay() == 6 || date.getDay() == 0) {
+//     alert('It"s Fun day '+ monthArray[date.getDay()]);    
+// }else {
+//     alert('It"s '+ monthArray[date.getDay()]);
+// }
+
+// Chapter 31-34 Task 4-14 ====================/
+// var customerName = prompt("Enter Customer Name");
+// var customerMonth = prompt("Enter Customer Month");
+// var numberOfUnits = +prompt("Number of units");
+// var chargesPerUnit = +prompt("Charges per unit");
+// var latePaymentSurcharge = +prompt("Late Payment Surcharge");
+// var grossAmount = (numberOfUnits*chargesPerUnit)+latePaymentSurcharge;
+
+// document.write('<h1>K-Electric Bill</h1><br><p>Customer Name: <b>'+customerName+'</b></p><p>Month: <b>'+customerMonth+'</b></p><p>Number of units: <b>'+numberOfUnits+'</b></p><p>Charges per unit: <b>'+chargesPerUnit+'</b></p><br><p>Net Amount Payable (within Due Date): <b>'+numberOfUnits*chargesPerUnit+'</b></p><p>Late Payment Surcharge: <b>'+latePaymentSurcharge+'</b></p><p>Gross Amount Payable (after Due Date): <b>'+grossAmount+'</b></p>')
