@@ -498,4 +498,79 @@
 // var latePaymentSurcharge = +prompt("Late Payment Surcharge");
 // var grossAmount = (numberOfUnits*chargesPerUnit)+latePaymentSurcharge;
 
-// document.write('<h1>K-Electric Bill</h1><br><p>Customer Name: <b>'+customerName+'</b></p><p>Month: <b>'+customerMonth+'</b></p><p>Number of units: <b>'+numberOfUnits+'</b></p><p>Charges per unit: <b>'+chargesPerUnit+'</b></p><br><p>Net Amount Payable (within Due Date): <b>'+numberOfUnits*chargesPerUnit+'</b></p><p>Late Payment Surcharge: <b>'+latePaymentSurcharge+'</b></p><p>Gross Amount Payable (after Due Date): <b>'+grossAmount+'</b></p>')
+// document.write('<h1>K-Electric Bill</h1><br><p>Customer Name: <b>'+customerName+'</b></p><p>Month: <b>'+customerMonth+'</b></p><p>Number of units: <b>'+numberOfUnits+'</b></p><p>Charges per unit: <b>'+chargesPerUnit+'</b></p><br><p>Net Amount Payable (within Due Date): <b>'+numberOfUnits*chargesPerUnit+'</b></p><p>Late Payment Surcharge: <b>'+latePaymentSurcharge+'</b></p><p>Gross Amount Payable (after Due Date): <b>'+grossAmount+'</b></p>');
+
+// Chapter 35-38 Task 1 ====================/
+var date = getCurrentDate();
+document.write(date);
+
+function getCurrentDate() {
+    return new Date;
+}
+
+// Chapter 35-38 Task 2 ====================/
+// var first = prompt("Enter First name");
+// var last = prompt("Enter Last name")
+// alert('Hello! ' + getName(first, last));
+
+// function getName(first, last) {
+//     return first + ' ' + last;
+// }
+
+// Chapter 35-38 Task 3 ====================/
+// var firstNum = +prompt("Enter First number");
+// var secondNum = +prompt("Enter second number")
+// alert(getAdd(firstNum, secondNum));
+
+// function getAdd(firstNum, secondNum) {
+//     return firstNum + secondNum;
+// }
+
+// // Chapter 35-38 Task 4 ====================/
+// var firstNum = +prompt("Enter First number");
+// var secondNum = +prompt("Enter second number");
+// var operator = prompt("Enter operation (example: +,-,*,/,%)");
+
+// alert(getAns(firstNum, secondNum, operator));
+
+// function getAns(firstNum, secondNum, operator) {
+//     switch (operator) {
+//         case '+':
+//             return firstNum + secondNum;
+//             break;
+//         case '-':
+//             return firstNum - secondNum;
+//             break;
+//         case '*':
+//             return firstNum * secondNum;
+//             break;
+//         case '/':
+//             return firstNum / secondNum;
+//             break;
+//         case '%':
+//             return firstNum % secondNum;
+//             break;
+//         default: return 'Illegal operator';
+//     }
+// }
+
+// Chapter 35-38 Task 3 ====================/
+// var num = +prompt("Enter number");
+// alert('Squared: ' + getSquared(num));
+
+// function getSquared(num) {
+//     return num * num;
+// }
+
+// Chapter 35-38 Task 3 ====================/
+// var n = +prompt("Enter number");
+// document.write("The factorial of " + n + " is " + factorial(n));
+// function factorial(n){
+//     //base case
+//     if(n == 0 || n == 1){
+//         return 1;
+//     //recursive case
+//     }else{
+//         return n * factorial(n-1);
+//     }
+// }
