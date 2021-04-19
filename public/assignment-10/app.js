@@ -501,12 +501,12 @@
 // document.write('<h1>K-Electric Bill</h1><br><p>Customer Name: <b>'+customerName+'</b></p><p>Month: <b>'+customerMonth+'</b></p><p>Number of units: <b>'+numberOfUnits+'</b></p><p>Charges per unit: <b>'+chargesPerUnit+'</b></p><br><p>Net Amount Payable (within Due Date): <b>'+numberOfUnits*chargesPerUnit+'</b></p><p>Late Payment Surcharge: <b>'+latePaymentSurcharge+'</b></p><p>Gross Amount Payable (after Due Date): <b>'+grossAmount+'</b></p>');
 
 // Chapter 35-38 Task 1 ====================/
-var date = getCurrentDate();
-document.write(date);
+// var date = getCurrentDate();
+// document.write(date);
 
-function getCurrentDate() {
-    return new Date;
-}
+// function getCurrentDate() {
+//     return new Date;
+// }
 
 // Chapter 35-38 Task 2 ====================/
 // var first = prompt("Enter First name");
@@ -526,7 +526,7 @@ function getCurrentDate() {
 //     return firstNum + secondNum;
 // }
 
-// // Chapter 35-38 Task 4 ====================/
+// Chapter 35-38 Task 4 ====================/
 // var firstNum = +prompt("Enter First number");
 // var secondNum = +prompt("Enter second number");
 // var operator = prompt("Enter operation (example: +,-,*,/,%)");
@@ -554,7 +554,7 @@ function getCurrentDate() {
 //     }
 // }
 
-// Chapter 35-38 Task 3 ====================/
+// Chapter 35-38 Task 5 ====================/
 // var num = +prompt("Enter number");
 // alert('Squared: ' + getSquared(num));
 
@@ -562,7 +562,7 @@ function getCurrentDate() {
 //     return num * num;
 // }
 
-// Chapter 35-38 Task 3 ====================/
+// Chapter 35-38 Task 6 ====================/
 // var n = +prompt("Enter number");
 // document.write("The factorial of " + n + " is " + factorial(n));
 // function factorial(n){
@@ -574,3 +574,138 @@ function getCurrentDate() {
 //         return n * factorial(n-1);
 //     }
 // }
+
+// Chapter 35-38 Task 7 ====================/
+// var start = +prompt("Enter start number");
+// var end = +prompt("Enter end number");
+// counting(start, end);
+
+// function counting(start, end) {
+//     var i = 0;
+//     for (i = start; i <= end; i++) {
+//         document.write(i + ' ');
+//     }
+// }
+
+// Chapter 35-38 Task 8 ====================/
+// var base = +prompt("Enter base");
+// var perpendicular = +prompt("Enter perpendicular");
+
+// document.write('<p>Hypotenuse<sup>2</sup> = ' + calculateHypotenuse(base, perpendicular) + '</p><br>');
+
+// document.write('<p>Square = ' + calculateSquare(base, perpendicular) + '</p>');
+
+// function calculateHypotenuse(base, perpendicular) {
+//     return Math.sqrt((base*base)+(perpendicular*perpendicular));
+// }
+
+// function calculateSquare(base, perpendicular) {
+//     return base*perpendicular;
+// }
+
+// Chapter 35-38 Task 9 ====================/
+
+// var width = +prompt("Enter width");
+// var height = +prompt("Enter height");
+
+// document.write('Arguments as value = ' + areaOfARectangle(20, 5));
+// document.write('Arguments as variables = ' + areaOfARectangle(width, height));
+
+// function areaOfARectangle(width, height) {
+//     return width * height;
+// }
+
+// Chapter 35-38 Task 10 ====================/
+// var string = prompt("Enter palindrome string");
+// document.write(palindrome(string));
+
+// function palindrome(str) {
+//     var re = /[\W_]/g;
+//     var lowRegStr = str.toLowerCase().replace(re, '');
+//     var reverseStr = lowRegStr.split('').reverse().join('');
+//     return reverseStr === lowRegStr ? 'string is palindrome' : 'string is not palindrome';
+// }
+
+// Chapter 35-38 Task 11-14 ====================/
+// var radius = +prompt("Enter radius");
+
+// document.write('The circumference is ' + calcCircumference(radius));
+// document.write('The area is ' + calcArea(radius));
+
+// function calcCircumference(radius) {
+//     return 2*Math.PI*radius;
+// }
+
+// function calcArea(radius) {
+//     return Math.PI*radius*radius;
+// }
+
+// Chapter 38-42 Task 1 ====================/
+// var base = +prompt("Enter base value");
+// var power = +prompt("Enter power value");
+
+// document.write('The power is ' + calcPower(base, power));
+
+// function calcPower(base, power) {
+//     return Math.pow(base, power);
+// }
+
+// Chapter 38-42 Task 2 ====================/
+// var year = +prompt("Enter year");
+
+//  if (leapYear(year)) {
+//     document.write('Year is leap year');
+//  }else {
+//     document.write('Year is not a leap year');
+//  }
+
+// function leapYear(year) {
+//     return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+// }
+
+// Chapter 38-42 Task 3 ====================/
+// var a = +prompt("Enter length a");
+// var b = +prompt("Enter length b");
+// var c = +prompt("Enter length c");
+
+// document.write('Area of triangle is ' + getArea(a, b, c));
+
+// function getArea(a, b, c) {
+//     var s = semiPerimeter(a, b, c);
+//     return Math.sqrt(s * (s - a) * (s - b) * (s - c)).toFixed(2);
+// }
+
+// function semiPerimeter(a, b, c) {
+//     return (a + b + c) / 2;
+// }
+
+// Chapter 38-42 Task 4-10 ====================/
+var currency = +prompt("Enter currency");
+var hundreds = getNotes(currency, 100);
+var fifty = getNotes(hundreds[0], 50);
+var tens = getNotes(fifty[0], 10);
+
+function getNotes(currency, unit) {
+    var notes = 0
+    while (currency > unit - 1) {
+        currency = currency - unit;
+        notes++;
+        console.log(currency);
+    }
+    var arr = [];
+    arr.push(currency, notes);
+    console.log(arr);
+    return arr;
+}
+// while (currency > 49) {
+//     currency = currency - 50;
+//     fifty++;
+//     // console.log(currency);
+// }
+// while (currency > 9) {
+//     currency = currency - 10;
+//     tens++;
+//     // console.log(currency);
+// }
+
+document.write("You have " + hundreds[1] + " hundred note(s) " + fifty[1] + " fifty note(s) and " + tens[1] + " ten note(s)");
