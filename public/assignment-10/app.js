@@ -680,32 +680,23 @@
 // }
 
 // Chapter 38-42 Task 4-10 ====================/
-var currency = +prompt("Enter currency");
-var hundreds = getNotes(currency, 100);
-var fifty = getNotes(hundreds[0], 50);
-var tens = getNotes(fifty[0], 10);
+// var currency = +prompt("Enter currency");
+// var hundreds = getNotes(currency, 100);
+// var fifty = getNotes(hundreds[0], 50);
+// var tens = getNotes(fifty[0], 10);
 
-function getNotes(currency, unit) {
-    var notes = 0
-    while (currency > unit - 1) {
-        currency = currency - unit;
-        notes++;
-        console.log(currency);
-    }
-    var arr = [];
-    arr.push(currency, notes);
-    console.log(arr);
-    return arr;
-}
-// while (currency > 49) {
-//     currency = currency - 50;
-//     fifty++;
-//     // console.log(currency);
-// }
-// while (currency > 9) {
-//     currency = currency - 10;
-//     tens++;
-//     // console.log(currency);
+// function getNotes(currency, unit) {
+//     var notes = 0;
+//     var arr = [];
+//     while (currency > unit - 1) {
+//         currency = currency - unit;
+//         notes++;
+//     }
+//     arr.push(currency, notes);
+//     console.log(arr);
+//     return arr;
 // }
 
-document.write("You have " + hundreds[1] + " hundred note(s) " + fifty[1] + " fifty note(s) and " + tens[1] + " ten note(s)");
+// document.write("You have " + hundreds[1] + " hundred note(s) " + fifty[1] + " fifty note(s) and " + tens[1] + " ten note(s)");
+
+// Chapter 43-48 Task 4-10 ====================/
