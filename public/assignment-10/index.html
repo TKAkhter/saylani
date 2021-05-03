@@ -31,6 +31,10 @@
             border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
             border-image: initial;
         }
+
+        .mobile-image {
+            max-width: 200px;
+        }
     </style>
 </head>
 
@@ -65,6 +69,38 @@
             browser window and select More Tools > Developer Tools. You can also use the shortcut Option + ⌘ + J (on
             macOS), or Shift + CTRL + J (on Windows/Linux).</p>
     </div>
+    <table border="1">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Jhone</td>
+            <td>10</td>
+            <td><a class="delete-row" onclick="deleteRow(this)">Delete</a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><a class="delete-row" onclick="deleteRow(this)">Delete</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td><a class="delete-row" onclick="deleteRow(this)">Delete</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>James</td>
+            <td>8</td>
+            <td><a class="delete-row" onclick="deleteRow(this)">Delete</a></td>
+        </tr>
+    </table>
 </body>
 <script src="app.js"></script>
 

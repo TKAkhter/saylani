@@ -699,4 +699,85 @@
 
 // document.write("You have " + hundreds[1] + " hundred note(s) " + fifty[1] + " fifty note(s) and " + tens[1] + " ten note(s)");
 
-// Chapter 43-48 Task 4-10 ====================/
+// Chapter 43-48 Task 1 ====================/
+
+// var node = document.createElement("A");
+// var textNode = document.createTextNode("Water");
+// node.appendChild(textNode);
+// node.setAttribute("id", "link");
+// node.setAttribute("onclick", "myFunction()");
+// document.querySelector("body").appendChild(node);
+// var link = document.getElementById("link");
+
+// function myFunction() {
+//     alert("clicked..!");
+// }
+
+// Chapter 43-48 Task 2 ====================/
+
+// var node = document.createElement("H2");
+// var textNode = document.createTextNode("Mobile Phone Lookup");
+// node.appendChild(textNode);
+// node.setAttribute("id", "mobile-header");
+// document.querySelector("body").appendChild(node);
+// for (var i = 1; i <= 4; i++) {
+//     var node = document.createElement("img");
+//     node.setAttribute("class", "mobile-image");
+//     node.setAttribute("onclick", "myFunction()");
+//     node.setAttribute("src", "./assets/images/image-" + i + ".jpg");
+//     document.querySelector("body").appendChild(node);
+// }
+
+// Chapter 43-48 Task 3 ====================/
+
+function deleteRow(e) {
+    e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode);
+}
+
+// Chapter 43-48 Task 4 ====================/
+
+// var node = document.createElement("img");
+// node.setAttribute("class", "mobile-image");
+// node.setAttribute("src", "./assets/images/image-1.jpg");
+// node.setAttribute("onmouseover", "bigImg(this)");
+// node.setAttribute("onmouseout", "normalImg(this)");
+// document.querySelector("body").appendChild(node);
+
+// function bigImg(e) {
+//     e.setAttribute("src", "./assets/images/image-2.jpg");
+// }
+
+// function normalImg(e) {
+//     e.setAttribute("src", "./assets/images/image-1.jpg");
+// }
+
+// Chapter 43-48 Task 5 ====================/
+
+// var node = document.createElement("A");
+// var textNode = document.createTextNode("+");
+// node.appendChild(textNode);
+// node.setAttribute("class", "plus");
+// node.setAttribute("onclick", "plusCounter(this)");
+// document.querySelector("body").appendChild(node);
+// var node = document.createElement("p");
+// var textNode = document.createTextNode("0");
+// node.appendChild(textNode);
+// node.setAttribute("class", "counter");
+// document.querySelector("body").appendChild(node);
+// var node = document.createElement("A");
+// var textNode = document.createTextNode("-");
+// node.appendChild(textNode);
+// node.setAttribute("class", "minus");
+// node.setAttribute("onclick", "minusCounter(this)");
+// document.querySelector("body").appendChild(node);
+
+// function plusCounter(e) {
+//     var count = document.querySelector('.counter').innerHTML;
+//     count++;
+//     document.querySelector('.counter').innerHTML = count;
+// }
+// function minusCounter(e) {
+//     var count = document.querySelector('.counter').innerHTML;
+//     count--;
+//     document.querySelector('.counter').innerHTML = count;
+// }
