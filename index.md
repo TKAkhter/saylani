@@ -161,7 +161,11 @@
       background: url('./public/assets/images/assignment-9.png');
     }
     .assignment-10 {
-      background: #ffa100;
+      /* background: #ffa100; */
+      background: url('./public/assets/images/assignment-10.png');
+    }
+    .assignment-11 {
+      background: url('./public/assets/images/assignment-11.jpg');
     }
   </style>
 </head>
@@ -226,10 +230,16 @@
           <p>Pokemon HomePage</p>
         </div>
       </a>
-      <a class="button-links main assignment assignment-10" target="_blank" href="./public/assignment-10/index.html">
+      <a class="button-links main assignment assignment-10" target="_blank" href="./assignment-10/index.html">
         <div>
           <h3>Assignment 10</h3>
-          <p>Pokemon HomePage</p>
+          <p>JavaScript</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-11" target="_blank" href="./assignment-11/index.html">
+        <div>
+          <h3>Assignment 11</h3>
+          <p>Simple Calculator</p>
         </div>
       </a>
     </div>
