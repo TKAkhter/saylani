@@ -8,12 +8,17 @@ body {
   height: 100vh;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #222831;
   font-family: sans-serif;
 }
 
+h1 {
+  padding: 30px 0;
+  color: white;
+}
 .calculator {
   width: 300px;
   padding-bottom: 15px;
