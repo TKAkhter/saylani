@@ -167,6 +167,9 @@
     .assignment-11 {
       background: url('./public/assets/images/assignment-11.jpg');
     }
+	.assignment-12 {
+      background: url('./public/assets/images/assignment-12.jpg');
+    }
   </style>
 </head>
 
@@ -240,6 +243,12 @@
         <div>
           <h3>Assignment 11</h3>
           <p>Simple Calculator</p>
+        </div>
+      </a>
+	   <a class="button-links main assignment assignment-12" target="_blank" href="./assignment-12/index.html">
+        <div>
+          <h3>Assignment 12</h3>
+          <p>Stop Watch</p>
         </div>
       </a>
     </div>
