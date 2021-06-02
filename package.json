@@ -1,0 +1,22 @@
+{
+  "name": "saylani",
+  "version": "1.0.0",
+  "description": "Saylani Assignments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TKAkhter/saylani.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TKAkhter/saylani/issues"
+  },
+  "homepage": "https://github.com/TKAkhter/saylani#readme",
+  "dependencies": {
+    "firebase": "^8.6.3"
+  }
+}
