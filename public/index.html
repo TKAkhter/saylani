@@ -2,289 +2,298 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to Firebase Hosting</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
-  <!-- update the version number as needed -->
-  <script defer src="/__/firebase/8.2.6/firebase-app.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/8.2.6/firebase-auth.js"></script>
-  <script defer src="/__/firebase/8.2.6/firebase-database.js"></script>
-  <script defer src="/__/firebase/8.2.6/firebase-firestore.js"></script>
-  <script defer src="/__/firebase/8.2.6/firebase-functions.js"></script>
-  <script defer src="/__/firebase/8.2.6/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/8.2.6/firebase-storage.js"></script>
-  <script defer src="/__/firebase/8.2.6/firebase-analytics.js"></script>
-  <script defer src="/__/firebase/8.2.6/firebase-remote-config.js"></script>
-  <script defer src="/__/firebase/8.2.6/firebase-performance.js"></script>
-  <!-- 
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.2.6/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.6/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-performance.js"></script>
+    <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
-  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-  <style media="screen">
-    body {
-      background: #ECEFF1;
-      color: rgba(0, 0, 0, 0.87);
-      font-family: Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    #message {
-      background: white;
-      max-width: 1200px;
-      margin: 100px auto 16px;
-      padding: 32px 24px;
-      border-radius: 3px;
-    }
-
-    #message h2 {
-      color: #ffa100;
-      font-weight: bold;
-      font-size: 16px;
-      margin: 0 0 8px;
-    }
-
-    #message h1 {
-      font-size: 22px;
-      font-weight: 300;
-      color: rgba(0, 0, 0, 0.6);
-      margin: 0 0 16px;
-    }
-
-    #message p {
-      line-height: 140%;
-      margin: 16px 0 24px;
-      font-size: 14px;
-    }
-
-    #message a {
-      flex: 1;
-      text-align: center;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: rgba(0, 0, 0, 0.87);
-      border-radius: 4px;
-    }
-
-    #message,
-    #message a {
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    }
-
-    #load {
-      color: rgba(0, 0, 0, 0.4);
-      text-align: center;
-      font-size: 13px;
-    }
-
-    a.button-links.main.assignment {
-      min-width: 250px;
-      min-height: 300px;
-      margin: 20px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 600px) {
-
-      body,
-      #message {
-        margin-top: 0;
-        background: white;
-        box-shadow: none;
-      }
-
-      body {
-        border-top: 16px solid #ffa100;
-      }
-    }
-
-    .buttons {
-      justify-content: space-around;
-    }
-
-    .assignment {
-      padding: 0;
-      flex-direction: column;
-      display: flex;
-      justify-content: flex-end;
-      background-size: cover !important;
-    }
-
-    .assignment div {
-      background: #f5f5f5;
-      opacity: 0.9;
-      padding: 10px;
-    }
-
-    .assignment-1 {
-      background: url('./assets/images/assignment-1.png');
-
-    }
-
-    .assignment-2 {
-      background: url('./assets/images/assignment-2.png');
-    }
-
-    .assignment-3 {
-      background: url('./assets/images/assignment-3.png');
-    }
-
-    .assignment-4 {
-      background: url('./assets/images/assignment-4.png');
-    }
-
-    .assignment-5 {
-      background: url('./assets/images/assignment-5.png');
-    }
-
-    .assignment-6 {
-      background: url('./assets/images/assignment-6.png');
-    }
-
-    .assignment-7 {
-      background: url('./assets/images/assignment-7.png');
-    }
-
-    .assignment-8 {
-      background: url('./assets/images/assignment-8.png');
-    }
-
-    .assignment-9 {
-      background: url('./assets/images/assignment-9.png');
-    }
-    .assignment-10 {
-      /* background: #ffa100; */
-      background: url('./assets/images/assignment-10.png');
-    }
-    .assignment-11 {
-      background: url('./assets/images/assignment-11.jpg');
-    }
-  </style>
+    <style media="screen">
+        body {
+            background: #ECEFF1;
+            color: rgba(0, 0, 0, 0.87);
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #message {
+            background: white;
+            max-width: 1200px;
+            margin: 100px auto 16px;
+            padding: 32px 24px;
+            border-radius: 3px;
+        }
+        
+        #message h2 {
+            color: #ffa100;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 0 8px;
+        }
+        
+        #message h1 {
+            font-size: 22px;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.6);
+            margin: 0 0 16px;
+        }
+        
+        #message p {
+            line-height: 140%;
+            margin: 16px 0 24px;
+            font-size: 14px;
+        }
+        
+        #message a {
+            flex: 1;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.87);
+            border-radius: 4px;
+        }
+        
+        #message,
+        #message a {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        
+        #load {
+            color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            font-size: 13px;
+        }
+        
+        a.button-links.main.assignment {
+            min-width: 250px;
+            min-height: 300px;
+            margin: 20px;
+        }
+        
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 600px) {
+            body,
+            #message {
+                margin-top: 0;
+                background: white;
+                box-shadow: none;
+            }
+            body {
+                border-top: 16px solid #ffa100;
+            }
+        }
+        
+        .buttons {
+            justify-content: space-around;
+        }
+        
+        .assignment {
+            padding: 0;
+            flex-direction: column;
+            display: flex;
+            justify-content: flex-end;
+            background-size: cover !important;
+        }
+        
+        .assignment div {
+            background: #f5f5f5;
+            opacity: 0.9;
+            padding: 10px;
+        }
+        
+        .assignment-1 {
+            background: url('./assets/images/assignment-1.png');
+        }
+        
+        .assignment-2 {
+            background: url('./assets/images/assignment-2.png');
+        }
+        
+        .assignment-3 {
+            background: url('./assets/images/assignment-3.png');
+        }
+        
+        .assignment-4 {
+            background: url('./assets/images/assignment-4.png');
+        }
+        
+        .assignment-5 {
+            background: url('./assets/images/assignment-5.png');
+        }
+        
+        .assignment-6 {
+            background: url('./assets/images/assignment-6.png');
+        }
+        
+        .assignment-7 {
+            background: url('./assets/images/assignment-7.png');
+        }
+        
+        .assignment-8 {
+            background: url('./assets/images/assignment-8.png');
+        }
+        
+        .assignment-9 {
+            background: url('./assets/images/assignment-9.png');
+        }
+        
+        .assignment-10 {
+            /* background: #ffa100; */
+            background: url('./assets/images/assignment-10.png');
+        }
+        
+        .assignment-11 {
+            background: url('./assets/images/assignment-11.jpg');
+        }
+        
+        .assignment-12 {
+            background: url('./assets/images/assignment-12.jpg');
+        }
+    </style>
 </head>
 
 <body>
-  <div id="message">
-    <h2>Welcome!</h2>
-    <h1>Saylani Assignments</h1>
-    <p>Please click on button to see assignments</p>
-    <div class="buttons">
-      <a class="button-links main assignment assignment-1" target="_blank" href="./assignment-1/index.html">
-        <div>
-          <h3>Assignment 1</h3>
-          <p>Create Resume</p>
+    <div id="message">
+        <h2>Welcome!</h2>
+        <h1>Saylani Assignments</h1>
+        <p>Please click on button to see assignments</p>
+        <div class="buttons">
+            <a class="button-links main assignment assignment-1" target="_blank" href="./assignment-1/index.html">
+                <div>
+                    <h3>Assignment 1</h3>
+                    <p>Create Resume</p>
+                </div>
+            </a>
+            <a class="button-links main assignment assignment-2" target="_blank" href="./assignment-2/index.html">
+                <div>
+                    <h3>Assignment 2</h3>
+                    <p>5 pages using relative link, absolute link and page link</p>
+                </div>
+            </a>
+            <a class="button-links main assignment assignment-3" target="_blank" href="./assignment-3/index.html">
+                <div>
+                    <h3>Assignment 3</h3>
+                    <p>Periodic Table</p>
+                </div>
+            </a>
+            <a class="button-links main assignment assignment-4" target="_blank" href="./assignment-4/index.html">
+                <div>
+                    <h3>Assignment 4</h3>
+                    <p>Multiple steps Forms</p>
+                </div>
+            </a>
+            <a class="button-links main assignment assignment-5" target="_blank" href="./assignment-5/index.html">
+                <div>
+                    <h3>Assignment 5</h3>
+                    <p>Make replica of forms.saylaniwelfare.com</p>
+                </div>
+            </a>
+            <a class="button-links main assignment assignment-6" target="_blank" href="./assignment-6/index.html">
+                <div>
+                    <h3>Assignment 6</h3>
+                    <p>DAWN News Page</p>
+                </div>
+            </a>
+            <a class="button-links main assignment assignment-7" target="_blank" href="./assignment-7/index.html">
+                <div>
+                    <h3>Assignment 7</h3>
+                    <p>Apple HomePage</p>
+                </div>
+            </a>
+            <a class="button-links main assignment assignment-8" target="_blank" href="./assignment-8/index.html">
+                <div>
+                    <h3>Assignment 8</h3>
+                    <p>Class HomePage Task</p>
+                </div>
+            </a>
+            <a class="button-links main assignment assignment-9" target="_blank" href="./assignment-9/index.html">
+                <div>
+                    <h3>Assignment 9</h3>
+                    <p>Pokemon HomePage</p>
+                </div>
+            </a>
+            <a class="button-links main assignment assignment-10" target="_blank" href="./assignment-10/index.html">
+                <div>
+                    <h3>Assignment 10</h3>
+                    <p>JavaScript</p>
+                </div>
+            </a>
+            <a class="button-links main assignment assignment-11" target="_blank" href="./assignment-11/index.html">
+                <div>
+                    <h3>Assignment 11</h3>
+                    <p>Simple Calculator</p>
+                </div>
+            </a>
+            <a class="button-links main assignment assignment-12" target="_blank" href="./assignment-12/index.html">
+                <div>
+                    <h3>Assignment 12</h3>
+                    <p>Stop Watch</p>
+                </div>
+            </a>
         </div>
-      </a>
-      <a class="button-links main assignment assignment-2" target="_blank" href="./assignment-2/index.html">
-        <div>
-          <h3>Assignment 2</h3>
-          <p>5 pages using relative link, absolute link and page link</p>
-        </div>
-      </a>
-      <a class="button-links main assignment assignment-3" target="_blank" href="./assignment-3/index.html">
-        <div>
-          <h3>Assignment 3</h3>
-          <p>Periodic Table</p>
-        </div>
-      </a>
-      <a class="button-links main assignment assignment-4" target="_blank" href="./assignment-4/index.html">
-        <div>
-          <h3>Assignment 4</h3>
-          <p>Multiple steps Forms</p>
-        </div>
-      </a>
-      <a class="button-links main assignment assignment-5" target="_blank" href="./assignment-5/index.html">
-        <div>
-          <h3>Assignment 5</h3>
-          <p>Make replica of forms.saylaniwelfare.com</p>
-        </div>
-      </a>
-      <a class="button-links main assignment assignment-6" target="_blank" href="./assignment-6/index.html">
-        <div>
-          <h3>Assignment 6</h3>
-          <p>DAWN News Page</p>
-        </div>
-      </a>
-      <a class="button-links main assignment assignment-7" target="_blank" href="./assignment-7/index.html">
-        <div>
-          <h3>Assignment 7</h3>
-          <p>Apple HomePage</p>
-        </div>
-      </a>
-      <a class="button-links main assignment assignment-8" target="_blank" href="./assignment-8/index.html">
-        <div>
-          <h3>Assignment 8</h3>
-          <p>Class HomePage Task</p>
-        </div>
-      </a>
-      <a class="button-links main assignment assignment-9" target="_blank" href="./assignment-9/index.html">
-        <div>
-          <h3>Assignment 9</h3>
-          <p>Pokemon HomePage</p>
-        </div>
-      </a>
-      <a class="button-links main assignment assignment-10" target="_blank" href="./assignment-10/index.html">
-        <div>
-          <h3>Assignment 10</h3>
-          <p>JavaScript</p>
-        </div>
-      </a>
-      <a class="button-links main assignment assignment-11" target="_blank" href="./assignment-11/index.html">
-        <div>
-          <h3>Assignment 11</h3>
-          <p>Simple Calculator</p>
-        </div>
-      </a>
     </div>
-  </div>
-  <p id="load">Firebase SDK Loading&hellip;</p>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const loadEl = document.querySelector('#load');
-      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-      // // The Firebase SDK is initialized and available here!
-      //
-      // firebase.auth().onAuthStateChanged(user => { });
-      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-      // firebase.firestore().doc('/foo/bar').get().then(() => { });
-      // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-      // firebase.messaging().requestPermission().then(() => { });
-      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-      // firebase.analytics(); // call to activate
-      // firebase.analytics().logEvent('tutorial_completed');
-      // firebase.performance(); // call to activate
-      //
-      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadEl = document.querySelector('#load');
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+            // // The Firebase SDK is initialized and available here!
+            //
+            // firebase.auth().onAuthStateChanged(user => { });
+            // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+            // firebase.firestore().doc('/foo/bar').get().then(() => { });
+            // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+            // firebase.messaging().requestPermission().then(() => { });
+            // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+            // firebase.analytics(); // call to activate
+            // firebase.analytics().logEvent('tutorial_completed');
+            // firebase.performance(); // call to activate
+            //
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-      try {
-        let app = firebase.app();
-        let features = [
-          'auth',
-          'database',
-          'firestore',
-          'functions',
-          'messaging',
-          'storage',
-          'analytics',
-          'remoteConfig',
-          'performance',
-        ].filter(feature => typeof app[feature] === 'function');
-        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-      } catch (e) {
-        console.error(e);
-        loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-      }
-    });
-  </script>
+            try {
+                let app = firebase.app();
+                let features = [
+                    'auth',
+                    'database',
+                    'firestore',
+                    'functions',
+                    'messaging',
+                    'storage',
+                    'analytics',
+                    'remoteConfig',
+                    'performance',
+                ].filter(feature => typeof app[feature] === 'function');
+                loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+            } catch (e) {
+                console.error(e);
+                loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+            }
+        });
+    </script>
 </body>
 
 </html>
