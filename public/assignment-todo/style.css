@@ -16,11 +16,13 @@ h1 {
 
 .add-elements {
     margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 input {
     padding: 6px 4px;
-    width: 70%;
+    width: 60%;
 }
 
 button {
