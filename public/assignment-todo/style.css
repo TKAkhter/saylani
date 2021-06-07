@@ -1,9 +1,9 @@
 body {
-    background-color: #f5f5f5;
+    background-color: #eeeee4;
 }
 
 .container {
-    background-color: #fafafa;
+    background-color: #e5e5e5;
     width: 460px;
     height: 680px;
     text-align: center;
@@ -16,11 +16,13 @@ h1 {
 
 .add-elements {
     margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 input {
     padding: 6px 4px;
-    width: 70%;
+    width: 60%;
 }
 
 button {

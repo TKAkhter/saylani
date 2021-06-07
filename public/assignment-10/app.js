@@ -730,9 +730,9 @@
 
 // Chapter 43-48 Task 3 ====================/
 
-function deleteRow(e) {
-    e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode);
-}
+// function deleteRow(e) {
+//     e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode);
+// }
 
 // Chapter 43-48 Task 4 ====================/
 

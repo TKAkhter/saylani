@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-do list</h1>
+
+        <div class="add-elements">
+            <input id="add" type="text" placeholder="add an element">
+
+            <button class="mdc-button mdc-button--raised" id="btn" onclick=addItem()>
+                <span class="mdc-button__label">Add</span>
+            </button>
+            <button class="mdc-button mdc-button--raised" id="delete-all" onclick=deleteAllItem()>
+                <span class="mdc-button__label">Delete All</span>
+            </button>
+        </div>
+        <div class="element-list">
+            <ul id="list">
+                <li>
+                    <input disabled value="buy some milk" />
+                    <a href="#" id="hi" onclick=editItem(this)>Edit</a>
+                    <a href="#" onclick=deleteItem(this)>Delete</a>
+                </li>
+                <li>
+                    <input disabled value="do your home work" />
+                    <a href="#" onclick=editItem(this)>Edit</a>
+                    <a href="#" onclick=deleteItem(this)>Delete</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</html>
