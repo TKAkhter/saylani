@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Objects</h1>
+
+        <form id="myForm" method="POST" enctype="multipart/form-data" onsubmit="check(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address"><br>
+            <br>
+            <label for="education">Education:</label><br>
+            <input type="checkbox" id="ssc" name="ssc" value="SSC">
+            <label for="ssc">SSC</label><br>
+            <input type="checkbox" id="hsc" name="hsc" value="HSC">
+            <label for="hsc">HSC</label><br>
+            <input type="checkbox" id="bsc" name="bsc" value="BSC">
+            <label for="bsc">BSC</label><br>
+            <input type="checkbox" id="msc" name="msc" value="MSC">
+            <label for="msc">MSC</label>
+            <br>
+            <br><label for="Profession">Profession:</label><br>
+            <input type="checkbox" id="entry" name="entry" value="entryLevel">
+            <label for="entryLevel">Entry Level</label><br>
+            <input type="checkbox" id="midLevel" name="midLevel" value="midLevel">
+            <label for="midLevel">Mid Level</label><br>
+            <input type="checkbox" id="seniorLevel" name="seniorLevel" value="seniorLevel">
+            <label for="seniorLevel">Senior Level</label><br><br>
+            <input type="submit" class="btn btn-primary">
+        </form>
+    </div>
+    <script src="app.js"></script>
+
+</html>
