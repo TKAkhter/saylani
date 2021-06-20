@@ -1,0 +1,317 @@
+// Add custom styles here (scss -> _style.css)
+
+:root {
+  --custom-primary: #c3a064;
+  --custom-secondary: #694a20;
+  --custom-dark: #020202;
+  --custom-light: #f7f8fa;
+  --custom-text: #707176;
+  --custom-inactive: #3e3d3d;
+  --custom-font-family: Gotham;
+}
+
+.custom-primary {
+  color: var(--custom-primary) !important;
+}
+
+.custom-secondary {
+  color: var(--custom-secondary) !important;
+}
+
+.custom-dark {
+  color: var(--custom-dark) !important;
+}
+
+.custom-light {
+  color: var(--custom-light) !important;
+}
+
+.custom-text {
+  color: var(--text) !important;
+}
+
+.custom-inactive {
+  color: var(--inactive) !important;
+}
+
+.custom-bg-primary {
+  background-color: var(--custom-primary) !important;
+}
+
+.custom-bg-secondary {
+  background-color: var(--custom-secondary) !important;
+}
+
+.custom-bg-primary {
+  background-color: var(--custom-primary) !important;
+  border-color: var(--custom-primary) !important;
+}
+
+.custom-bg-secondary {
+  background-color: var(--custom-secondary) !important;
+  border-color: var(--custom-secondary) !important;
+}
+
+.custom-bg-dark {
+  background-color: var(--custom-dark) !important;
+  border-color: var(--custom-dark) !important;
+}
+
+.custom-bg-light {
+  background-color: var(--custom-light) !important;
+  border-color: var(--custom-light) !important;
+}
+
+.custom-bg-text {
+  background-color: var(--text) !important;
+  border-color: var(--custom-text) !important;
+}
+
+.custom-bg-inactive {
+  background-color: var(--inactive) !important;
+  border-color: var(--custom-inactive) !important;
+}
+
+.custom-font {
+  font-family: var(--custom-font-family) !important;
+}
+
+// ==================================
+
+body * {
+  font-family: var(--custom-font-family);
+  // color: var(--custom-text);
+}
+
+// ==================================
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+body,
+.example h1,
+.example p,
+.example .button {
+  transition: all 0.2s ease-in-out;
+}
+
+body.light-theme {
+  background-color: #151515;
+}
+
+body.light-theme .example h1 {
+  color: #ffffff;
+}
+
+body.light-theme .example p {
+  color: #ffffff;
+}
+
+body.light-theme .buttons .button {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+body.light-theme .buttons .button:hover {
+  color: #151515;
+  background-color: #ffffff;
+}
+
+.example {
+  font-family: "Roboto", sans-serif;
+  width: 550px;
+  height: 378px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.example .flipdown {
+  margin: auto;
+}
+
+.example h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.example p {
+  text-align: center;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.example .buttons {
+  width: 100%;
+  height: 50px;
+  margin: 50px auto 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.example .buttons p {
+  height: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  padding: 0px 25px 0px 0px;
+  color: #333;
+  margin: 0px;
+}
+
+.example .button {
+  display: inline-block;
+  height: 50px;
+  box-sizing: border-box;
+  line-height: 46px;
+  text-decoration: none;
+  color: #333;
+  padding: 0px 20px;
+  border: solid 2px #333;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.example .button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.example .button i {
+  margin-right: 5px;
+}
+
+@media (max-width: 550px) {
+  .example {
+    width: 100%;
+    height: 362px;
+  }
+
+  .example h1 {
+    font-size: 2.5em;
+  }
+
+  .example p {
+    margin-bottom: 25px;
+  }
+
+  .example .buttons {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    display: block;
+  }
+
+  .example .buttons p,
+  .example .buttons a {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .example .buttons p {
+    padding-right: 0px;
+  }
+
+  .example .buttons a {
+    display: inline-block;
+  }
+}
+
+// ========================
+
+// body {
+//   font-size: 20px;
+//   font-family: "Work Sans", sans-serif;
+//   color: #333;
+//   font-weight: 300;
+//   text-align: center;
+//   background-color: #f8f6f0;
+// }
+// h1 {
+//   font-weight: 300;
+//   margin: 0px;
+//   padding: 10px;
+//   font-size: 20px;
+//   // background-color: #444;
+//   color: #fff;
+// }
+// .question {
+//   font-size: 30px;
+//   margin-bottom: 10px;
+// }
+// .answers {
+//   margin-bottom: 20px;
+//   text-align: left;
+//   display: inline-block;
+// }
+// .answers label {
+//   display: block;
+//   margin-bottom: 10px;
+// }
+// // button {
+// //   font-family: "Work Sans", sans-serif;
+// //   font-size: 22px;
+// //   background-color: #279;
+// //   color: #fff;
+// //   border: 0px;
+// //   border-radius: 3px;
+// //   padding: 20px;
+// //   cursor: pointer;
+// //   margin-bottom: 20px;
+// // }
+// // button:hover {
+// //   background-color: #38a;
+// // }
+
+// .slide {
+//   position: absolute;
+//   left: 0px;
+//   top: 0px;
+//   width: 100%;
+//   z-index: 1;
+//   opacity: 0;
+//   transition: opacity 0.5s;
+// }
+// .active-slide {
+//   opacity: 1;
+//   z-index: 2;
+// }
+// .quiz-container {
+//   position: relative;
+//   height: 200px;
+//   margin-top: 40px;
+// }
+
+// input {
+//   display: none;
+// }
+
+// .selected {
+//   color: #fff;
+//   background-color: var(--primary);
+//   border-color: var(--primary);
+// }
+
+// .incorrect {
+//   color: #fff;
+//   background-color: var(--danger);
+//   border-color: var(--danger);
+// }
+
+// .correct {
+//   color: #fff;
+//   background-color: var(--success);
+//   border-color: var(--success);
+// }
