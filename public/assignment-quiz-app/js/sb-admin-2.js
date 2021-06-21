@@ -53,10 +53,54 @@
     e.preventDefault();
   });
 
+  const data = {
+    labels: ["Correct", "Incorrect"],
+    datasets: [{
+      data: [85, 15],
+      // displacements: [0, 0, 20],
+      backgroundColor: ['#1cc88a', '#e74a3b'],
+      // hoverBackgroundColor: ['#2e59d9', '#17a673'],
+      hoverBorderColor: "rgba(234, 236, 244, 1)",
+    }],
+  };
+
+  const config = {
+    type: 'pie',
+    data: data,
+    options: {
+      animation: {
+        animateScale: true
+      },
+      legend: {
+        position: 'bottom',
+        display: true,
+        labels: {
+          boxWidth: 30,
+          padding: 50
+        }
+      },
+      maintainAspectRatio: false,
+      plugins: {
+        datalabels: {
+          color: '#fff',
+          display: true,
+          font: {
+            family: 'Gotham',
+            size: 20,
+            weight: 'bold'
+          },
+          formatter: function (value, context) {
+            return Math.round(value) + '%';
+          }
+        },
+      },
+    },
+  };
+  var timeOut = false;
   document.addEventListener('DOMContentLoaded', () => {
 
     // Unix timestamp (in seconds) to count down to
-    var twoDaysFromNow = (new Date().getTime() / 1000) + 60;
+    var twoDaysFromNow = (new Date().getTime() / 1000) + 15;
 
     // Set up FlipDown
     var flipdown = new FlipDown(twoDaysFromNow)
@@ -66,126 +110,20 @@
 
       // Do something when the countdown ends
       .ifEnded(() => {
-        $('#submit').trigger('click');
+        timeOut = true;
+        $('#btnSubmit').trigger('click');
         console.log('The countdown has ended!');
       });
   });
 
-})(jQuery); // End of use strict
-
-(function () {
-  // Functions
-  function buildQuiz() {
-    // variable to store the HTML output
-    const output = [];
-
-    // for each question...
-    myQuestions.forEach(
-      (currentQuestion, questionNumber) => {
-
-        // variable to store the list of possible answers
-        const answers = [];
-
-        // and for each available answer...
-        for (letter in currentQuestion.answers) {
-
-          // ...add an HTML radio button
-          answers.push(
-            `<label>
-              <input type="radio" name="question${questionNumber}" value="${letter}">
-              ${letter} :
-              ${currentQuestion.answers[letter]}
-            </label>`
-          );
-        }
-
-        // add this question and its answers to the output
-        output.push(
-          `<div class="slide">
-            <div class="question"> ${currentQuestion.question} </div>
-            <div class="answers"> ${answers.join("")} </div>
-          </div>`
-        );
-      }
-    );
-
-    // finally combine our output list into one string of HTML and put it on the page
-    quizContainer.innerHTML = output.join('');
-  }
-
-  function showResults() {
-
-    // gather answer containers from our quiz
-    const answerContainers = quizContainer.querySelectorAll('.answers');
-
-    // keep track of user's answers
-    let numCorrect = 0;
-
-    // for each question...
-    myQuestions.forEach((currentQuestion, questionNumber) => {
-
-      // find selected answer
-      const answerContainer = answerContainers[questionNumber];
-      const selector = `input[name=question${questionNumber}]:checked`;
-      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
-      // if answer is correct
-      if (userAnswer === currentQuestion.correctAnswer) {
-        // add to the number of correct answers
-        numCorrect++;
-
-        // color the answers green
-        answerContainers[questionNumber].style.color = 'lightgreen';
-      }
-      // if answer is wrong or blank
-      else {
-        // color the answers red
-        answerContainers[questionNumber].style.color = 'red';
-      }
-    });
-
-    // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-  }
-
-  function showSlide(n) {
-    slides[currentSlide].classList.remove('active-slide');
-    slides[n].classList.add('active-slide');
-    currentSlide = n;
-    if (currentSlide === 0) {
-      previousButton.style.display = 'none';
-    } else {
-      previousButton.style.display = 'inline-block';
-    }
-    if (currentSlide === slides.length - 1) {
-      nextButton.style.display = 'none';
-      submitButton.style.display = 'inline-block';
-    } else {
-      nextButton.style.display = 'inline-block';
-      submitButton.style.display = 'none';
-    }
-  }
-
-  function showNextSlide() {
-    showSlide(currentSlide + 1);
-  }
-
-  function showPreviousSlide() {
-    showSlide(currentSlide - 1);
-  }
-
-  // Variables
-  const quizContainer = document.getElementById('quiz');
-  const resultsContainer = document.getElementById('results');
-  const submitButton = document.getElementById('submit');
-  const myQuestions = [{
+  var questionsArray = [{
       question: "Who invented JavaScript?",
       answers: {
         a: "Douglas Crockford",
         b: "Sheryl Sandberg",
         c: "Brendan Eich"
       },
-      correctAnswer: "c"
+      correctAnswer: "Brendan Eich"
     },
     {
       question: "Which one of these is a JavaScript package manager?",
@@ -194,7 +132,7 @@
         b: "TypeScript",
         c: "npm"
       },
-      correctAnswer: "c"
+      correctAnswer: "npm"
     },
     {
       question: "Which tool can you use to ensure code quality?",
@@ -204,35 +142,126 @@
         c: "RequireJS",
         d: "ESLint"
       },
-      correctAnswer: "d"
+      correctAnswer: "ESLint"
     }
   ];
 
-  // Kick things off
-  buildQuiz();
+  var points = 0;
+  var numQuestions = questionsArray.length;
+  var count = 0;
 
-  // Pagination
-  const previousButton = document.getElementById("previous");
-  const nextButton = document.getElementById("next");
-  const slides = document.querySelectorAll(".slide");
-  let currentSlide = 0;
+  for (var i in questionsArray) {
+    if (i == 0) {
+      var slide =
+        `<div class="slide active">`;
+    } else {
+      var slide =
+        `<div class="slide">`;
+    }
+    slide = slide +
+      `<p class="text-justify h5 pb-2 font-weight-bold question">` + questionsArray[i].question + `</p>
+    <div class="options py-3">`;
+    for (var j in questionsArray[i].answers) {
+      slide = slide +
+        `<label class="rounded p-2 option">` + questionsArray[i].answers[j] + `
+        <input type="radio" name="radio">`;
+      if (questionsArray[i].correctAnswer === questionsArray[i].answers[j]) {
+        slide = slide + `<span class="checkmark"></span></label>`;
+      } else {
+        slide = slide + `<span class="crossmark"></span></label>`;
+      }
+    }
+    slide = slide +
+      `</div>
+    <div class="feedback d-none">
+        <b>Feedback</b>
+        <p class="mt-2 mb-4 pl-2 text-justify"> Well done! He was scared of flying so picked
+            up
+            the
+            parachute from an support store before the trip. He won gold </p>
+        <p class="my-2 pl-2"> That was incorrect. Try again </p>
+    </div>`;
+    $('.content').append(slide);
+  }
 
-  // Show the first slide
-  showSlide(currentSlide);
+  mouseDisabled();
 
-  // Event listeners
-  submitButton.addEventListener('click', showResults);
-  previousButton.addEventListener("click", showPreviousSlide);
-  nextButton.addEventListener("click", showNextSlide);
-})();
+  $('#nextButton').on('click', function () {
+    if ($('.slide.active input:checked').length != 0) {
+      // console.log($('.slide.active input:checked'));
+      var userAnswer = $('.slide.active input:checked').parent().text().trim();
+      if (questionsArray[count].correctAnswer == userAnswer) {
+        points++;
+      }
+      count++;
+      // console.log(points);
+      $('.slide.active').remove();
+      $('.slide').first().addClass('active');
+      mouseDisabled();
+      if (count > numQuestions - 2) {
+        // console.log('here');
+        $('#nextButton').addClass('d-none');
+        $('#btnSubmit').addClass('d-block');
+      }
+    } else {
+      alert('Please select an option!');
+    }
 
- // Select option
- $('.slide.active-slide .answers label').on('click', function () {
-  $('.slide.active-slide .answers label').each(function(index,value) {
-    $(value).removeClass('selected');
-    console.log(value);
-  });
-  $(this).addClass('selected');
-  console.log(this);
-  // console.log(this);
-});
+  })
+
+  $('#btnSubmit').on('click', function () {
+    $('.loading-screen').fadeIn("slow");
+    setTimeout(function () {
+      $('.loading-screen').fadeOut("slow");
+    }, 5000);
+    if ($('.slide.active input:checked').length != 0 || timeOut == true) {
+      var userAnswer = $('.slide.active input:checked').parent().text().trim();
+      if (questionsArray[count].correctAnswer == userAnswer) {
+        points++;
+      }
+      $('.mcq-container').children().remove();
+      $('.mcq-container').append(
+        `<div class="mcq-container container-fluid">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Result</h1>
+        </div>
+        <div class="container-fluid bg-white rounded mb-4">
+            <div class="row">
+                <div class="col mb-4 pb-4">
+                    <h3 class="result-text">
+                        You got <span class="text-success">` + points + `</span> out of <span class="text-danger">` + numQuestions + `</span> correct. Click on Retry button to start over assessments.
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 mx-auto mb-4 pb-4">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="buttons menu">
+                    <a id="retryButton" href="index.html" class="btn btn-primary">Retry</a>
+                </div>
+            </div>
+        </div>
+    </div>`);
+      var chartBox = document.getElementById('myChart');
+      if (chartBox) {
+        data.datasets[0].data = [(points / numQuestions) * 100, ((numQuestions - points) / numQuestions) * 100]
+
+        var myChart = new Chart(chartBox,
+          config
+        );
+      }
+    } else {
+      alert('Please select an option!');
+    }
+  })
+
+  function mouseDisabled() {
+    $('.slide.active .options label').on('click', function () {
+      $('.slide.active .options').addClass('mouse-disabled');
+    })
+  }
+  $(".loading-screen").fadeOut("slow");
+})(jQuery); // End of use strict

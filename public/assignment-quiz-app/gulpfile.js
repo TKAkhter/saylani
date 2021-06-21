@@ -58,7 +58,10 @@ function modules() {
   // ChartJS
   var chartJS = gulp.src('./node_modules/chart.js/dist/*.js')
     .pipe(gulp.dest('./vendor/chart.js'));
-  // ChartJS
+  // ChartJSPluginDatalabels
+  var ChartJSPluginDatalabels = gulp.src('./node_modules/chartjs-plugin-datalabels/dist/*.js')
+    .pipe(gulp.dest('./vendor/chartjs-plugin-datalabels'));
+  // flipDown
   var flipDown = gulp.src('./node_modules/flipdown/dist/*')
     .pipe(gulp.dest('./vendor/flipdown'));
   // dataTables
@@ -80,7 +83,7 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing, flipDown);
+  return merge(bootstrapJS, bootstrapSCSS, chartJS, ChartJSPluginDatalabels, dataTables, fontAwesome, jquery, jqueryEasing, flipDown);
 }
 
 // CSS task

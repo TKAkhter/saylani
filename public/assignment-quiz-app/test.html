@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="vendor/flipdown/flipdown.min.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -352,6 +353,10 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
+                <div class="loading-screen">
+                    <div class="loader"></div>
+                    <p>Please wait we are calculating your result...</p>
+                </div>
                 <div class="mcq-container container-fluid">
 
                     <!-- Page Heading -->
@@ -361,28 +366,26 @@
 
                     <!-- Content Row -->
 
-                    <div class="container-fluid">
+                    <div class="container-fluid mx-auto">
+                        <div id="flipdown"
+                            class="flipdown row mx-auto w-100 d-flex align-items-center justify-content-center mb-4">
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+
+                    <div class="container-fluid bg-white rounded mb-4">
                         <div class="row">
                             <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Quiz Instructions:</h5>
-                                        <ul class="list instruction">
-                                            <li>There will be 3 multiple choice question in this online test.</li>
-                                            <li>Answer of the questions will change randomly each time you start this
-                                                test.</li>
-                                            <li>Options can be selected only once </li>
-                                            <li>Quiz must be completed in 15 seconds</li>
-                                            <li>Practice this test at least 3 times if you want to secure High Marks.
-                                            </li>
-                                            <li>At the End of the Test you can see your Test score and Rating.</li>
-                                            <li>If you found any incorrect answer in quiz. simply click on the quiz
-                                                title and comment on that mcqs. so that our team can update the
-                                                incorrect answer on time.</li>
-                                        </ul>
-                                        <a href="test.html" class="btn btn-success my-4">Start Quiz!</a>
-                                    </div>
+                                <div class="content">
+                                    <p class="text-muted">Multiple Choice Question</p>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex align-items-center justify-content-center">
+                            <div class="buttons menu">
+                                <button id="nextButton" class="btn btn-primary">Next</button>
+                                <button id='btnSubmit' class="btn btn-success d-none">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -445,6 +448,16 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/chartjs-plugin-datalabels/chartjs-plugin-datalabels.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+    <script src="vendor/flipdown/flipdown.min.js"></script>
 
 </body>
 
