@@ -1,5 +1,6 @@
 // Function called whenever user tab on any box
-function initDecide() {
+const initDecide = () => {
+// function initDecide() {
 
     // Setting DOM to all boxes or input field
     var b1, b1, b3, b4, b5, b6, b7, b8, b9, i, bArray = [];
@@ -83,7 +84,8 @@ function initDecide() {
 }
 
 // Function to reset game
-function resetGame() {
+const resetGame = () => {
+// function resetGame() {
     location.reload();
     for (i = 1; i <= 9; i++) {
         document.getElementById("b" + i).value = '';
@@ -94,7 +96,8 @@ function resetGame() {
 // and put accordingly value X or 0
 flag = 1;
 
-function toogleTurn(element) {
+const toogleTurn = (element) => {
+// function toogleTurn(element) {
     var i;
     console.log(element.getAttribute("id"));
     for (i = 1; i <= 9; i++) {
@@ -112,7 +115,8 @@ function toogleTurn(element) {
     }
 }
 
-function onSignup() {
+const onSignup = () => {
+// function onSignup() {
     // get input values
     var email = document.getElementById("email");
     var password = document.getElementById("password");
@@ -150,7 +154,8 @@ function onSignup() {
 
 }
 
-function onLogin() {
+const onLogin = () => {
+// function onLogin() {
     // get input values
     var email = document.getElementById("email");
     var password = document.getElementById("password");
@@ -184,7 +189,8 @@ function onLogin() {
     }, 2000);
 }
 
-function onLogout() {
+const onLogout = () => {
+// function onLogout() {
     var message = document.getElementById("message");
     localStorage.removeItem("user");
     message.innerHTML = "Good Bye.!";
@@ -194,7 +200,8 @@ function onLogout() {
     }, 2000);
 }
 
-function getCurrentUser() {
+const getCurrentUser = () => {
+// function getCurrentUser() {
     var detail = document.getElementById("detail");
     if (JSON.parse(localStorage.getItem("user"))) {
         var user = JSON.parse(localStorage.getItem("user"));
