@@ -31,7 +31,7 @@ function onSignup() {
     }, 2000);
 
 
-    // console.log(user);
+    console.log(user);
 
 
 }
@@ -58,10 +58,14 @@ function onLogin() {
         // user login
         location.href = "index.html";
     } else {
+        message.classList.add("alert");
+        message.classList.add("alert-dark");
         message.innerHTML = "Invalid credentials";
     }
     // clear state
     setTimeout(() => {
+        message.classList.remove("alert");
+        message.classList.remove("alert-dark");
         message.innerHTML = "";
     }, 2000);
 }
@@ -77,7 +81,11 @@ function onLogout() {
 }
 
 function getCurrentUser() {
-    var detial = document.getElementById("detial");
-    var user = JSON.parse(localStorage.getItem("user"));
-    detial.innerHTML = "Loggedin as " + user.email.split("@")[0];
+    var detail = document.getElementById("detail");
+    if (JSON.parse(localStorage.getItem("user"))) {
+        var user = JSON.parse(localStorage.getItem("user"));
+        detail.innerHTML = "Loggedin as " + user.email.split("@")[0];
+    } else {
+        location.href = "login.html";
+    }
 }
