@@ -1,73 +1,50 @@
-FB.getLoginStatus(function (response) {
-    statusChangeCallback(response);
-});
-
-function checkLoginState() {
-    FB.getLoginStatus(function (response) {
-        statusChangeCallback(response);
-    });
-}
-
-FB.login(function (response) {
-    // handle the response
-}, {
-    scope: 'public_profile,email'
-});
-
-FB.login(function (response) {
-    if (response.status === 'connected') {
-        // Logged into your webpage and Facebook.
-    } else {
-        // The person is not logged into your webpage or we are unable to tell. 
-    }
-});
-
-FB.logout(function (response) {
-    // Person is now logged out
-});
-
-window.fbAsyncInit = function () {
-    FB.init({
-        appId: 'APP_ID',
-        xfbml: true,
-        version: 'v2.6'
-    });
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyC7GPh2nv1Jg7drd0Cem715MHDtYSN3Quk",
+  authDomain: "assignment-node-firebase.firebaseapp.com",
+  projectId: "assignment-node-firebase",
+  storageBucket: "assignment-node-firebase.appspot.com",
+  messagingSenderId: "195333234472",
+  appId: "1:195333234472:web:e7d3fc3c3c46db79133a1d"
 };
 
-(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {
-        return;
-    }
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+// Firebase Config
 
-var provider = new firebase.auth.FacebookAuthProvider();
+document.addEventListener("DOMContentLoaded", function () {
+  const loadEl = document.querySelector("#load");
+  // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  // // The Firebase SDK is initialized and available here!
+  //
+  // firebase.auth().onAuthStateChanged(user => { });
+  // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+  // firebase.firestore().doc('/foo/bar').get().then(() => { });
+  // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+  // firebase.messaging().requestPermission().then(() => { });
+  // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+  // firebase.analytics(); // call to activate
+  // firebase.analytics().logEvent('tutorial_completed');
+  // firebase.performance(); // call to activate
+  //
+  // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-function facebookSignin() {
-    firebase.auth().signInWithPopup(provider)
-
-        .then(function (result) {
-            var token = result.credential.accessToken;
-            var user = result.user;
-
-            console.log(token)
-            console.log(user)
-        }).catch(function (error) {
-            console.log(error.code);
-            console.log(error.message);
-        });
-}
-
-function facebookSignout() {
-    firebase.auth().signOut()
-
-        .then(function () {
-            console.log('Signout successful!')
-        }, function (error) {
-            console.log('Signout failed')
-        });
-}
+  try {
+    let app = firebase.app();
+    let features = [
+      "auth",
+      "database",
+      "firestore",
+      "functions",
+      "messaging",
+      "storage",
+      "analytics",
+      "remoteConfig",
+      "performance",
+    ].filter((feature) => typeof app[feature] === "function");
+    loadEl.textContent = `Firebase SDK loaded with ${features.join(", ")}`;
+  } catch (e) {
+    console.error(e);
+    loadEl.textContent = "Error loading the Firebase SDK, check the console.";
+  }
+});

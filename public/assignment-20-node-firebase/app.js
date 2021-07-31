@@ -1,15 +1,4 @@
-// Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyC7GPh2nv1Jg7drd0Cem715MHDtYSN3Quk",
-    authDomain: "assignment-node-firebase.firebaseapp.com",
-    projectId: "assignment-node-firebase",
-    storageBucket: "assignment-node-firebase.appspot.com",
-    messagingSenderId: "195333234472",
-    appId: "1:195333234472:web:e7d3fc3c3c46db79133a1d"
-};
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
 
 
 // Connect to Facebook SDK

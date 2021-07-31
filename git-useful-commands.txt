@@ -1,0 +1,10 @@
+// issue File C:\Users\Student-PC\AppData\Roaming\npm\firebase.ps1 cannot be loaded because running scripts is 
+disabled on this system. For more information, see about_Execution_Policies at
+
+// run this command
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+//issue firebase login The term 'firebase' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+// run this command
+npm install -g firebase-tools
