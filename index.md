@@ -21,94 +21,14 @@
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
+  
+  <link rel="stylesheet" href="./public/assets/css/style.css" >
+
+  <link rel="icon" href="https://img.icons8.com/windows/32/000000/node-js.png" type="image/gif" sizes="16x16">
+
   <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
+  
   <style media="screen">
-    body {
-      background: #ECEFF1;
-      color: rgba(0, 0, 0, 0.87);
-      font-family: Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    #message {
-      background: white;
-      max-width: 1200px;
-      margin: 100px auto 16px;
-      padding: 32px 24px;
-      border-radius: 3px;
-    }
-
-    #message h2 {
-      color: #ffa100;
-      font-weight: bold;
-      font-size: 16px;
-      margin: 0 0 8px;
-    }
-
-    #message h1 {
-      font-size: 22px;
-      font-weight: 300;
-      color: rgba(0, 0, 0, 0.6);
-      margin: 0 0 16px;
-    }
-
-    #message p {
-      line-height: 140%;
-      margin: 16px 0 24px;
-      font-size: 14px;
-    }
-
-    #message a {
-      flex: 1;
-      text-align: center;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: rgba(0, 0, 0, 0.87);
-      border-radius: 4px;
-    }
-
-    #message,
-    #message a {
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    }
-
-    #load {
-      color: rgba(0, 0, 0, 0.4);
-      text-align: center;
-      font-size: 13px;
-    }
-
-    a.button-links.main.assignment {
-      min-width: 250px;
-      min-height: 300px;
-      margin: 20px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 600px) {
-
-      body,
-      #message {
-        margin-top: 0;
-        background: white;
-        box-shadow: none;
-      }
-
-      body {
-        border-top: 16px solid #ffa100;
-      }
-    }
-
-    .buttons {
-      justify-content: space-around;
-    }
 
     .assignment {
       padding: 0;
@@ -116,12 +36,6 @@
       display: flex;
       justify-content: flex-end;
       background-size: cover !important;
-    }
-
-    .assignment div {
-      background: #f5f5f5;
-      opacity: 0.9;
-      padding: 10px;
     }
 
     .assignment-1 {
@@ -182,21 +96,30 @@
       background: url('./public/assets/images/assignment-14.jpg');
     }
 
-    .assignment-todo {
-      background: url('./public/assets/images/assignment-todo.jpg');
+    .assignment-15-objects {
+      background: url('./assets/images/assignment-15-objects.jpg');
     }
 
-    .assignment-quiz-app {
-      background: url('./public/assets/images/assignment-quiz-app.jpg');
+    .assignment-16-todo {
+      background: url('./public/assets/images/assignment-16-todo.jpg');
     }
 
-    .assignment-tic-tac-toe {
-      background: url('./public/assets/images/assignment-tic-tac-toe.jpg');
+    .assignment-17-quiz-app {
+      background: url('./public/assets/images/assignment-17-quiz-app.jpg');
     }
 
-    .assignment-node-dev {
-      background: url('./public/assets/images/assignment-node-dev.jpg');
+    .assignment-18-tic-tac-toe {
+      background: url('./public/assets/images/assignment-18-tic-tac-toe.jpg');
     }
+
+    .assignment-19-node-dev {
+      background: url('./public/assets/images/assignment-19-node-dev.jpg');
+    }
+
+    .assignment-20-node-firebase {
+      background: url('./assets/images/assignment-20-node-firebase.png');
+    }
+
   </style>
 </head>
 
@@ -290,28 +213,40 @@
           <p>JS Objects (DOM)</p>
         </div>
       </a>
-      <a class="button-links main assignment assignment-todo" target="_blank" href="./assignment-todo/index.html">
+      <a class="button-links main assignment assignment-15-objects" target="_blank" href="./assignment-15-objects/index.html">
+        <div>
+          <h3>Assignment 15</h3>
+          <p>DOM Objects</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-16-todo" target="_blank" href="./assignment-16-todo/index.html">
         <div>
           <h3>Assignment Todo List</h3>
           <p>List App</p>
         </div>
       </a>
-      <a class="button-links main assignment assignment-quiz-app" target="_blank" href="./assignment-quiz-app/index.html">
+      <a class="button-links main assignment assignment-17-quiz-app" target="_blank" href="./assignment-17-quiz-app/index.html">
         <div>
           <h3>Assignment Quiz App</h3>
           <p>Online Assessment</p>
         </div>
       </a>
-      <a class="button-links main assignment assignment-tic-tac-toe" target="_blank" href="./assignment-tic-tac-toe/index.html">
+      <a class="button-links main assignment assignment-18-tic-tac-toe" target="_blank" href="./assignment-18-tic-tac-toe/index.html">
         <div>
           <h3>Assignment Tic Tac Toe</h3>
           <p>Online Game</p>
         </div>
       </a>
-      <a class="button-links main assignment assignment-node-dev" target="_blank" href="./assignment-node-dev/index.html">
+      <a class="button-links main assignment assignment-19-node-dev" target="_blank" href="./assignment-19-node-dev/index.html">
         <div>
           <h3>Assignment NodeJs</h3>
           <p>Local Storage</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-20-node-firebase" target="_blank" href="./assignment-20-node-firebase/index.html">
+        <div>
+          <h3>Assignment NodeJs</h3>
+          <p>Firebase with Google and Facebook Auth</p>
         </div>
       </a>
     </div>
@@ -355,5 +290,34 @@
         loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
       }
     });
+
   </script>
+
+  <!-- FB SDK -->
+  <script>
+      window.fbAsyncInit = function () {
+          FB.init({
+              appId: '2578159549146982',
+              cookie: true,
+              xfbml: true,
+              version: 'v11.0'
+          });
+
+          FB.AppEvents.logPageView();
+
+      };
+
+      (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {
+              return;
+          }
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <script src="./public/assets/app.js"></script>
 </body>
