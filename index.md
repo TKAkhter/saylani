@@ -24,6 +24,8 @@
   
   <link rel="stylesheet" href="./public/assets/css/style.css" >
 
+  <link rel="icon" href="https://img.icons8.com/windows/32/000000/node-js.png" type="image/gif" sizes="16x16">
+
   <script defer src="/__/firebase/init.js?useEmulator=true"></script>
   
   <style media="screen">
