@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <link rel="icon" href="https://img.icons8.com/windows/32/000000/node-js.png" type="image/gif" sizes="16x16">
-    
+
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
     <style media="screen">
@@ -270,9 +270,75 @@
                     <p>Firebase with Google and Facebook Auth</p>
                 </div>
             </a>
+            <div class="button-links main assignment assignment-20-node-firebase" target="_blank"
+                href="./assignment-20-node-firebase/index.html">
+                <div>
+                    <div id="fb-root"></div>
+                    <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+                    </div>
+                    <button onclick="facebookSignin()">Facebook Signin</button>
+                    <button onclick="facebookSignout()">Facebook Signout</button>
+                    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                    </fb:login-button>
+                    <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with"
+                        data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+                    <script>
+                        function statusChangeCallback(response) { // Called with the results from FB.getLoginStatus().
+                            console.log('statusChangeCallback');
+                            console.log(response); // The current login status of the person.
+                            if (response.status === 'connected') { // Logged into your webpage and Facebook.
+                                testAPI();
+                            } else { // Not logged into your webpage or we are unable to tell.
+                                document.getElementById('status').innerHTML = 'Please log ' +
+                                    'into this webpage.';
+                            }
+                        }
 
-            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-            </fb:login-button>
+
+                        function checkLoginState() { // Called when a person is finished with the Login Button.
+                            FB.getLoginStatus(function (response) { // See the onlogin handler
+                                statusChangeCallback(response);
+                            });
+                        }
+
+
+                        window.fbAsyncInit = function () {
+                            FB.init({
+                                appId: '{app-id}',
+                                cookie: true, // Enable cookies to allow the server to access the session.
+                                xfbml: true, // Parse social plugins on this webpage.
+                                version: '{api-version}' // Use this Graph API version for this call.
+                            });
+
+
+                            FB.getLoginStatus(function (response) { // Called after the JS SDK has been initialized.
+                                statusChangeCallback(response); // Returns the login status.
+                            });
+                        };
+
+                        function testAPI() { // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+                            console.log('Welcome!  Fetching your information.... ');
+                            FB.api('/me', function (response) {
+                                console.log('Successful login for: ' + response.name);
+                                document.getElementById('status').innerHTML =
+                                    'Thanks for logging in, ' + response.name + '!';
+                            });
+                        }
+                    </script>
+
+
+                    <!-- The JS SDK Login Button -->
+
+                    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                    </fb:login-button>
+
+                    <div id="status">
+                    </div>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js">
+                    </script>
+                </div>
+            </div>
+
 
         </div>
     </div>
@@ -345,6 +411,9 @@
 
     <script src="./assets/js/app.js"></script>
 
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0&appId=2578159549146982&autoLogAppEvents=1"
+        nonce="0hmaZpVw"></script>
 </body>
 
 </html>
