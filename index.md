@@ -21,94 +21,12 @@
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
+  
+  <link rel="stylesheet" href="./public/assets/css/style.css" >
+
   <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
+  
   <style media="screen">
-    body {
-      background: #ECEFF1;
-      color: rgba(0, 0, 0, 0.87);
-      font-family: Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    #message {
-      background: white;
-      max-width: 1200px;
-      margin: 100px auto 16px;
-      padding: 32px 24px;
-      border-radius: 3px;
-    }
-
-    #message h2 {
-      color: #ffa100;
-      font-weight: bold;
-      font-size: 16px;
-      margin: 0 0 8px;
-    }
-
-    #message h1 {
-      font-size: 22px;
-      font-weight: 300;
-      color: rgba(0, 0, 0, 0.6);
-      margin: 0 0 16px;
-    }
-
-    #message p {
-      line-height: 140%;
-      margin: 16px 0 24px;
-      font-size: 14px;
-    }
-
-    #message a {
-      flex: 1;
-      text-align: center;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: rgba(0, 0, 0, 0.87);
-      border-radius: 4px;
-    }
-
-    #message,
-    #message a {
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    }
-
-    #load {
-      color: rgba(0, 0, 0, 0.4);
-      text-align: center;
-      font-size: 13px;
-    }
-
-    a.button-links.main.assignment {
-      min-width: 250px;
-      min-height: 300px;
-      margin: 20px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 600px) {
-
-      body,
-      #message {
-        margin-top: 0;
-        background: white;
-        box-shadow: none;
-      }
-
-      body {
-        border-top: 16px solid #ffa100;
-      }
-    }
-
-    .buttons {
-      justify-content: space-around;
-    }
 
     .assignment {
       padding: 0;
@@ -116,12 +34,6 @@
       display: flex;
       justify-content: flex-end;
       background-size: cover !important;
-    }
-
-    .assignment div {
-      background: #f5f5f5;
-      opacity: 0.9;
-      padding: 10px;
     }
 
     .assignment-1 {
@@ -203,7 +115,7 @@
     }
 
     .assignment-20-node-firebase {
-      background: url('./assets/images/assignment-20-node-firebase.jpg');
+      background: url('./assets/images/assignment-20-node-firebase.png');
     }
 
   </style>
@@ -376,5 +288,34 @@
         loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
       }
     });
+
   </script>
+
+  <!-- FB SDK -->
+  <script>
+      window.fbAsyncInit = function () {
+          FB.init({
+              appId: '2578159549146982',
+              cookie: true,
+              xfbml: true,
+              version: 'v11.0'
+          });
+
+          FB.AppEvents.logPageView();
+
+      };
+
+      (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {
+              return;
+          }
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <script src="./public/assets/app.js"></script>
 </body>
