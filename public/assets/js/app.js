@@ -1,3 +1,11 @@
+// Firebase App (the core Firebase SDK) is always required and
+// must be listed before other Firebase SDKs
+// var firebase = require("firebase/app");
+
+// // Add the Firebase products that you want to use
+// require("firebase/auth");
+// require("firebase/firestore");
+
 // Your web app's Firebase configuration
 var firebaseConfig = {
   apiKey: "AIzaSyC7GPh2nv1Jg7drd0Cem715MHDtYSN3Quk",
@@ -48,3 +56,14 @@ document.addEventListener("DOMContentLoaded", function () {
     loadEl.textContent = "Error loading the Firebase SDK, check the console.";
   }
 });
+
+var admin = require("firebase-admin");
+
+var serviceAccount = require("../../../serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://saylani-assignments-2d2a1-default-rtdb.firebaseio.com"
+});
+
+const app = admin.initializeApp();
