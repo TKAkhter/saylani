@@ -5,13 +5,13 @@ var firebaseConfig = {
   projectId: "assignment-node-firebase",
   storageBucket: "assignment-node-firebase.appspot.com",
   messagingSenderId: "195333234472",
-  appId: "1:195333234472:web:e7d3fc3c3c46db79133a1d"
+  appId: "1:195333234472:web:e7d3fc3c3c46db79133a1d",
 };
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-// Firebase Config
 
+// Firebase Config
 document.addEventListener("DOMContentLoaded", function () {
   const loadEl = document.querySelector("#load");
   // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
