@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "firebase": "^8.8.1",
-    "firebase-admin": "^9.11.0"
+    "firebase-admin": "^9.11.0",
+    "mongoose-unique-validator": "^2.0.3"
   }
 }
