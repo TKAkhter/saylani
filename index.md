@@ -112,8 +112,8 @@
       background: url('./public/assets/images/assignment-18-tic-tac-toe.jpg');
     }
 
-    .assignment-19-node-dev {
-      background: url('./public/assets/images/assignment-19-node-dev.jpg');
+    .assignment-19-localstorage {
+      background: url('./public/assets/images/assignment-19-localstorage.jpg');
     }
 
     .assignment-20-node-firebase {
@@ -237,7 +237,7 @@
           <p>Online Game</p>
         </div>
       </a>
-      <a class="button-links main assignment assignment-19-node-dev" target="_blank" href="./assignment-19-node-dev/index.html">
+      <a class="button-links main assignment assignment-19-localstorage" target="_blank" href="./assignment-19-localstorage/index.html">
         <div>
           <h3>Assignment NodeJs</h3>
           <p>Local Storage</p>

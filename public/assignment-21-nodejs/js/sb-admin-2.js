@@ -1,6 +1,5 @@
 (function ($) {
   "use strict"; // Start of use strict
-
   // Toggle the side navigation
   $("#sidebarToggle, #sidebarToggleTop").on('click', function (e) {
     $("body").toggleClass("sidebar-toggled");
@@ -97,24 +96,6 @@
     },
   };
   var timeOut = false;
-  document.addEventListener('DOMContentLoaded', () => {
-
-    // Unix timestamp (in seconds) to count down to
-    var twoDaysFromNow = (new Date().getTime() / 1000) + 15;
-
-    // Set up FlipDown
-    var flipdown = new FlipDown(twoDaysFromNow)
-
-      // Start the countdown
-      .start()
-
-      // Do something when the countdown ends
-      .ifEnded(() => {
-        timeOut = true;
-        $('#btnSubmit').trigger('click');
-        console.log('The countdown has ended!');
-      });
-  });
 
   var questionsArray = [{
       question: "Who invented JavaScript?",
