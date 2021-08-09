@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const postModel = require("../models/postSchema");
-const userModel = require("../models/userSchema");
+const postModel = require("./Schema");
 
 // require('./apis/posts');
 // require('./apis/users');
@@ -18,12 +17,23 @@ app.use(cors());
 // app.use(require("./routes"));
 
 const DB_URI =
-  "mongodb+srv://nodejs-prac:nodejs-prac@cluster0.gqhek.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  "mongodb+srv://admin:admin123@cluster0.ohkm0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 mongoose.connect(DB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
+});
+
+app.get("/add", (request, response) => {
+  postModel.create({ title: "HBD" }, (error, data) => {
+    if (error) {
+      response.send(error.message);
+    } else {
+      console.log(data);
+      response.send("Success");
+    }
+  });
 });
 
 app.post("/create", (request, response) => {
