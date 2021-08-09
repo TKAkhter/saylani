@@ -4,18 +4,34 @@
   "description": "",
   "main": "assets/js/server.js",
   "scripts": {
-    "start": "node assets/js/server",
-    "startnodemon":"nodemon ./server.js localhost 8080"
+    "start": "nodemon ./server/server.js localhost 8080",
+    "watch": "node_modules/.bin/gulp watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "5.15.3",
     "body-parser": "^1.19.0",
+    "bootstrap": "4.6.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "jquery": "3.6.0",
+    "jquery.easing": "^1.4.1",
     "mongoose": "^5.13.5"
   },
   "devDependencies": {
+    "browser-sync": "2.26.14",
+    "del": "6.0.0",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "7.0.1",
+    "gulp-clean-css": "4.3.0",
+    "gulp-header": "2.0.9",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-uglify": "3.0.2",
+    "merge-stream": "2.0.0",
     "nodemon": "^2.0.12"
   }
 }
