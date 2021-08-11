@@ -21,7 +21,10 @@ const signup = () => {
         .append(response.data)
         .css("display", "block");
       console.log(response);
-      location.href = "login.html";
+      setTimeout(function () {
+        location.href = "index.html";
+      }, 5000);
+
     })
     .catch((error) => {
       $("#alert-response.alert-danger")
@@ -32,7 +35,6 @@ const signup = () => {
   setTimeout(function () {
     $("#alert-response").css("display", "none").text("");
   }, 5000);
-  
 };
 
 const login = () => {
