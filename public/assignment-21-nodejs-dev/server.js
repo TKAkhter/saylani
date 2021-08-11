@@ -1,10 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const postModel = require("./Schema");
-
-// require('./apis/posts');
-// require('./apis/users');
-
+const postModel = require("./postSchema");
+const userModel = require("./userSchema");
 const cors = require("cors");
 // we imported express and set up a new express
 // instance const app = express().
@@ -14,26 +11,59 @@ const port = 5000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
-// app.use(require("./routes"));
+
+const DB_URI_habib =
+  "mongodb+srv://admin:admin123@cluster0.ohkm0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 const DB_URI =
-  "mongodb+srv://admin:admin123@cluster0.ohkm0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  "mongodb+srv://nodejs-prac:nodejs-prac@cluster0.gqhek.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 mongoose.connect(DB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useCreateIndex: true,
 });
 
-app.get("/add", (request, response) => {
-  postModel.create({ title: "HBD" }, (error, data) => {
-    if (error) {
-      response.send(error.message);
-    } else {
-      console.log(data);
-      response.send("Success");
-    }
-  });
+app.post("/registration", (request, response) => {
+  try {
+    const body = request.body;
+    userModel.findOne({ email: body.email }, (error, user) => {
+      if (error) {
+        throw error;
+      }
+      if (user) {
+        response.send("Email Already exist");
+      } else {
+        userModel.create(body, (error, data) => {
+          if (error) {
+            response.send(error.message);
+          } else {
+            response.send("Account Created Successfully");
+          }
+        });
+      }
+    });
+  } catch (error) {
+    response.send(`Got an error `, error.message);
+  }
+});
+
+app.post("/login", (request, response) => {
+  try {
+    const body = request.body;
+    userModel.findOne({ email: body.email }, (error, user) => {
+      if (error) {
+        throw error;
+      }
+      if (user) {
+        response.send(user);
+      }
+      if (!user) {
+        response.send(`Account not found ${body.email}`);
+      }
+    });
+  } catch (error) {
+    response.send(`Got an error `, error.message);
+  }
 });
 
 app.post("/create", (request, response) => {
