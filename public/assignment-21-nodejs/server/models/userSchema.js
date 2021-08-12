@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const uniqueValidator = require("mongoose-unique-validator");
+// const uniqueValidator = require("mongoose-unique-validator");
 // const crypto = require("crypto");
 // const jwt = require("jsonwebtoken");
 // const secret = require("../../").secret;
@@ -22,15 +22,13 @@ const UserSchema = new mongoose.Schema(
       match: [/\S+@\S+\.\S+/, "is invalid"],
       index: true,
     },
-    bio: String,
-    image: String,
-    hash: String,
-    salt: String,
+    full_name: String,
+    address: String,
   },
   { timestamps: true }
 );
 
-UserSchema.plugin(uniqueValidator, { message: "is already taken." });
+// UserSchema.plugin(uniqueValidator, { message: "is already taken." });
 
 // UserSchema.methods.setPassword = function (password) {
 //   this.salt = crypto.randomBytes(16).toString("hex");

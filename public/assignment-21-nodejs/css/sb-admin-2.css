@@ -11710,3 +11710,7 @@ span {
   font-size: 28px;
   text-decoration: underline;
 }
+
+#alert-response {
+  display: none;
+}
