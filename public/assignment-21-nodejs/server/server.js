@@ -48,7 +48,7 @@ app.post("/registration", (request, response) => {
   }
 });
 
-app.get("/login", (request, response) => {
+app.post("/login", (request, response) => {
   try {
     const body = request.body;
     userModel.findOne(body, (error, user) => {
@@ -122,6 +122,10 @@ app.get("/getapost", (request, response) => {
   } catch (error) {
     response.send(`Got an error during get a post `, error.message);
   }
+});
+
+app.get("/", (request, response) => {
+  response.send(`Server Active `);
 });
 
 mongoose.connection.on("connected", () => console.log("mongoose connected"));
