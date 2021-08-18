@@ -51,20 +51,23 @@ const onLogin = () => {
     username: $("#username").val(),
     email: $("#email").val(),
   };
-  console.log(obj);
   // Make a request for a user with a given ID
   // post(url,body,headers)
   axios
-    .get(`${BASE_URL}/login`, obj)
+    .post(`${BASE_URL}/login`, obj)
     .then((response) => {
+      const userData = {
+        username: response.data.username,
+        email: response.data.email,
+      };
       console.log(response);
-      if (response.status == 200) {
+      if (userData) {
         $("#alert-response")
           .removeClass("alert-danger")
           .addClass("alert-success")
-          .append('Login Successful')
+          .append("Login Successful")
           .css("display", "block");
-        localStorage.setItem("user", JSON.stringify(obj));
+        localStorage.setItem("user", JSON.stringify(userData));
         setTimeout(function () {
           location.href = "index.html";
         }, 5000);
@@ -86,31 +89,6 @@ const onLogin = () => {
   setTimeout(function () {
     $("#alert-response").css("display", "none").text("");
   }, 5000);
-
-  //=======================
-  // get data from LocalStorage
-  // get input values
-  //   var email = document.getElementById("email");
-  //   var username = document.getElementById("username");
-
-  //   var user = {
-  //     email: email.value,
-  //     username: username.value,
-  //   };
-
-  //   var users = JSON.parse(localStorage.getItem("users")) || [];
-  //   // get indx
-  //   var currentUser = users.find(function (val) {
-  //     return (
-  //       val.email.toLowerCase() === user.email.toLowerCase() &&
-  //       val.password === user.password
-  //     );
-  //   });
-  //   if (currentUser) {
-  //     localStorage.setItem("user", JSON.stringify(currentUser));
-  //     // user login
-  //     location.href = "index.html";
-  //   }
 };
 
 const onLogout = () => {
