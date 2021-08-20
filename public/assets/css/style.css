@@ -82,6 +82,8 @@ a.button-links.main.assignment {
   display: flex;
   justify-content: flex-end;
   background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 .books {

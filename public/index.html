@@ -1,362 +1,320 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    
-    <script defer src="/__/firebase/8.2.6/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.2.6/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-performance.js"></script>
-    <!-- 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to Firebase Hosting</title>
+
+  <!-- update the version number as needed -->
+
+  <script defer src="/__/firebase/8.2.6/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/8.2.6/firebase-auth.js"></script>
+  <script defer src="/__/firebase/8.2.6/firebase-database.js"></script>
+  <script defer src="/__/firebase/8.2.6/firebase-firestore.js"></script>
+  <script defer src="/__/firebase/8.2.6/firebase-functions.js"></script>
+  <script defer src="/__/firebase/8.2.6/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/8.2.6/firebase-storage.js"></script>
+  <script defer src="/__/firebase/8.2.6/firebase-analytics.js"></script>
+  <script defer src="/__/firebase/8.2.6/firebase-remote-config.js"></script>
+  <script defer src="/__/firebase/8.2.6/firebase-performance.js"></script>
+  <!-- 
           initialize the SDK after all desired features are loaded, set useEmulator to false
           to avoid connecting the SDK to running emulators.
         -->
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <link
-      rel="icon"
-      href="https://img.icons8.com/windows/32/000000/node-js.png"
-      type="image/gif"
-      sizes="16x16"
-    />
+  <link rel="icon" href="https://img.icons8.com/windows/32/000000/node-js.png" type="image/gif" sizes="16x16" />
 
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <style media="screen">
-      .assignment-1 {
-        background: url("./assets/images/assignment-1.png");
-      }
+  <style media="screen">
+    .assignment-1 {
+      background: url("./assets/images/assignment-1.png");
+    }
 
-      .assignment-2 {
-        background: url("./assets/images/assignment-2.png");
-      }
+    .assignment-2 {
+      background: url("./assets/images/assignment-2.png");
+    }
 
-      .assignment-3 {
-        background: url("./assets/images/assignment-3.png");
-      }
+    .assignment-3 {
+      background: url("./assets/images/assignment-3.png");
+    }
 
-      .assignment-4 {
-        background: url("./assets/images/assignment-4.png");
-      }
+    .assignment-4 {
+      background: url("./assets/images/assignment-4.png");
+    }
 
-      .assignment-5 {
-        background: url("./assets/images/assignment-5.png");
-      }
+    .assignment-5 {
+      background: url("./assets/images/assignment-5.png");
+    }
 
-      .assignment-6 {
-        background: url("./assets/images/assignment-6.png");
-      }
+    .assignment-6 {
+      background: url("./assets/images/assignment-6.png");
+    }
 
-      .assignment-7 {
-        background: url("./assets/images/assignment-7.png");
-      }
+    .assignment-7 {
+      background: url("./assets/images/assignment-7.png");
+    }
 
-      .assignment-8 {
-        background: url("./assets/images/assignment-8.png");
-      }
+    .assignment-8 {
+      background: url("./assets/images/assignment-8.png");
+    }
 
-      .assignment-9 {
-        background: url("./assets/images/assignment-9.png");
-      }
+    .assignment-9 {
+      background: url("./assets/images/assignment-9.png");
+    }
 
-      .assignment-10 {
-        /* background: #ffa100; */
-        background: url("./assets/images/assignment-10.png");
-      }
+    .assignment-10 {
+      /* background: #ffa100; */
+      background: url("./assets/images/assignment-10.png");
+    }
 
-      .assignment-11 {
-        background: url("./assets/images/assignment-11.jpg");
-      }
+    .assignment-11 {
+      background: url("./assets/images/assignment-11.jpg");
+    }
 
-      .assignment-12 {
-        background: url("./assets/images/assignment-12.jpg");
-      }
+    .assignment-12 {
+      background: url("./assets/images/assignment-12.jpg");
+    }
 
-      .assignment-13 {
-        background: url("./assets/images/assignment-13.jpg");
-      }
+    .assignment-13 {
+      background: url("./assets/images/assignment-13.jpg");
+    }
 
-      .assignment-14 {
-        background: url("./assets/images/assignment-14.jpg");
-      }
+    .assignment-14 {
+      background: url("./assets/images/assignment-14.jpg");
+    }
 
-      .assignment-15-objects {
-        background: url("./assets/images/assignment-15-objects.jpg");
-      }
+    .assignment-15-objects {
+      background: url("./assets/images/assignment-15-objects.jpg");
+    }
 
-      .assignment-16-todo {
-        background: url("./assets/images/assignment-16-todo.jpg");
-      }
+    .assignment-16-todo {
+      background: url("./assets/images/assignment-16-todo.jpg");
+    }
 
-      .assignment-17-quiz-app {
-        background: url("./assets/images/assignment-17-quiz-app.jpg");
-      }
+    .assignment-17-quiz-app {
+      background: url("./assets/images/assignment-17-quiz-app.jpg");
+    }
 
-      .assignment-18-tic-tac-toe {
-        background: url("./assets/images/assignment-18-tic-tac-toe.jpg");
-      }
+    .assignment-18-tic-tac-toe {
+      background: url("./assets/images/assignment-18-tic-tac-toe.jpg");
+    }
 
-      .assignment-19-localstorage {
-        background: url("./assets/images/assignment-19-localstorage.jpg");
-      }
+    .assignment-19-localstorage {
+      background: url("./assets/images/assignment-19-localstorage.jpg");
+    }
 
-      .assignment-20-node-firebase {
-        background: url("./assets/images/assignment-20-node-firebase.png");
-      }
-    </style>
-  </head>
+    .assignment-20-firebase {
+      background: url("./assets/images/assignment-20-firebase.png");
+    }
 
-  <body>
-    <div class="books">
-      <a class="" target="_blank" href="./assignment-10/index.html">
+    .assignment-21-nodejs {
+      background: url("./assets/images/assignment-21-nodejs.png");
+    }
+
+    .assignment-21-nodejs-dev {
+      background: url("./assets/images/assignment-21-nodejs-dev.png");
+    }
+    .assignment-21-nodejs-prac {
+      background: url("./assets/images/assignment-21-nodejs-prac.png");
+    }
+  </style>
+</head>
+
+<body>
+  <div class="books">
+    <a class="" target="_blank" href="./assignment-10/index.html">
+      <div>
+        <h3>All PDFs</h3>
+      </div>
+    </a>
+  </div>
+  <div id="message">
+    <h2>Welcome!</h2>
+    <h1>Saylani Assignments</h1>
+    <p>Please click on button to see assignments</p>
+    <div class="buttons">
+
+      <a class="button-links main assignment assignment-1" target="_blank" href="./assignment-1/index.html">
+
         <div>
-          <h3>All PDFs</h3>
+          <h3>Assignment 1</h3>
+          <p>Create Resume</p>
         </div>
       </a>
+
+      <a class="button-links main assignment assignment-2" target="_blank" href="./assignment-2/index.html">
+        <div>
+          <h3>Assignment 2</h3>
+          <p>5 pages using relative link, absolute link and page link</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-3" target="_blank" href="./assignment-3/index.html">
+        <div>
+          <h3>Assignment 3</h3>
+          <p>Periodic Table</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-4" target="_blank" href="./assignment-4/index.html">
+        <div>
+          <h3>Assignment 4</h3>
+          <p>Multiple steps Forms</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-5" target="_blank" href="./assignment-5/index.html">
+        <div>
+          <h3>Assignment 5</h3>
+          <p>Make replica of forms.saylaniwelfare.com</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-6" target="_blank" href="./assignment-6/index.html">
+        <div>
+          <h3>Assignment 6</h3>
+          <p>DAWN News Page</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-7" target="_blank" href="./assignment-7/index.html">
+        <div>
+          <h3>Assignment 7</h3>
+          <p>Apple HomePage</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-8" target="_blank" href="./assignment-8/index.html">
+        <div>
+          <h3>Assignment 8</h3>
+          <p>Class HomePage Task</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-9" target="_blank" href="./assignment-9/index.html">
+        <div>
+          <h3>Assignment 9</h3>
+          <p>Pokemon HomePage</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-10" target="_blank" href="./assignment-10/index.html">
+        <div>
+          <h3>Assignment 10</h3>
+          <p>JavaScript</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-11" target="_blank" href="./assignment-11/index.html">
+        <div>
+          <h3>Assignment 11</h3>
+          <p>Simple Calculator</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-12" target="_blank" href="./assignment-12/index.html">
+        <div>
+          <h3>Assignment 12</h3>
+          <p>Stop Watch</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-13" target="_blank" href="./assignment-13/index.html">
+        <div>
+          <h3>Assignment 13</h3>
+          <p>Stop Watch</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-14" target="_blank" href="./assignment-14/index.html">
+        <div>
+          <h3>Assignment 14</h3>
+          <p>JS Objects (DOM)</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-15-objects" target="_blank"
+        href="./assignment-15-objects/index.html">
+        <div>
+          <h3>Assignment 15</h3>
+          <p>DOM Objects</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-16-todo" target="_blank" href="./assignment-16-todo/index.html">
+        <div>
+          <h3>Assignment Todo List</h3>
+          <p>List App</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-17-quiz-app" target="_blank"
+        href="./assignment-17-quiz-app/index.html">
+        <div>
+          <h3>Assignment Quiz App</h3>
+          <p>Online Assessment</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-18-tic-tac-toe" target="_blank"
+        href="./assignment-18-tic-tac-toe/index.html">
+        <div>
+          <h3>Assignment Tic Tac Toe</h3>
+          <p>Online Game</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-19-localstorage" target="_blank"
+        href="./assignment-19-localstorage/index.html">
+        <div>
+          <h3>Assignment Local Storage</h3>
+          <p>Setup Login and SignUp using Local Storage</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-20-firebase" target="_blank"
+        href="./assignment-20-firebase/index.html">
+        <div>
+          <h3>Assignment Firebase</h3>
+          <p>Firebase with Google and Facebook Auth</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-21-nodejs" target="_blank"
+        href="./assignment-21-nodejs/index.html">
+        <div>
+          <h3>Assignment NodeJs</h3>
+          <p>NodeJS with Express and MongoDB using Mongoose</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-21-nodejs-dev" target="_blank"
+        href="./assignment-21-nodejs-dev/index.html">
+        <div>
+          <h3>Assignment NodeJs Dev</h3>
+          <p>NodeJS with Express and MongoDB using Mongoose</p>
+        </div>
+      </a>
+
+      <a class="button-links main assignment assignment-21-nodejs-prac" target="_blank"
+        href="./assignment-21-nodejs-prac/index.html">
+        <div>
+          <h3>Assignment NodeJs Practice</h3>
+          <p>NodeJS with Express and MongoDB using Mongoose</p>
+        </div>
+      </a>
+
     </div>
-    <div id="message">
-      <h2>Welcome!</h2>
-      <h1>Saylani Assignments</h1>
-      <p>Please click on button to see assignments</p>
-      <div class="buttons">
-        
-        <a
-          class="button-links main assignment assignment-1"
-          target="_blank"
-          href="./assignment-1/index.html"
-        >
+  </div>
 
-          <div>
-            <h3>Assignment 1</h3>
-            <p>Create Resume</p>
-          </div>
-        </a>
+  <p id="load">Firebase SDK Loading&hellip;</p>
 
-        <a
-          class="button-links main assignment assignment-2"
-          target="_blank"
-          href="./assignment-2/index.html"
-        >
-          <div>
-            <h3>Assignment 2</h3>
-            <p>5 pages using relative link, absolute link and page link</p>
-          </div>
-        </a>
+  <script src="./assets/js/app.js"></script>
+</body>
 
-        <a
-          class="button-links main assignment assignment-3"
-          target="_blank"
-          href="./assignment-3/index.html"
-        >
-          <div>
-            <h3>Assignment 3</h3>
-            <p>Periodic Table</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-4"
-          target="_blank"
-          href="./assignment-4/index.html"
-        >
-          <div>
-            <h3>Assignment 4</h3>
-            <p>Multiple steps Forms</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-5"
-          target="_blank"
-          href="./assignment-5/index.html"
-        >
-          <div>
-            <h3>Assignment 5</h3>
-            <p>Make replica of forms.saylaniwelfare.com</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-6"
-          target="_blank"
-          href="./assignment-6/index.html"
-        >
-          <div>
-            <h3>Assignment 6</h3>
-            <p>DAWN News Page</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-7"
-          target="_blank"
-          href="./assignment-7/index.html"
-        >
-          <div>
-            <h3>Assignment 7</h3>
-            <p>Apple HomePage</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-8"
-          target="_blank"
-          href="./assignment-8/index.html"
-        >
-          <div>
-            <h3>Assignment 8</h3>
-            <p>Class HomePage Task</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-9"
-          target="_blank"
-          href="./assignment-9/index.html"
-        >
-          <div>
-            <h3>Assignment 9</h3>
-            <p>Pokemon HomePage</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-10"
-          target="_blank"
-          href="./assignment-10/index.html"
-        >
-          <div>
-            <h3>Assignment 10</h3>
-            <p>JavaScript</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-11"
-          target="_blank"
-          href="./assignment-11/index.html"
-        >
-          <div>
-            <h3>Assignment 11</h3>
-            <p>Simple Calculator</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-12"
-          target="_blank"
-          href="./assignment-12/index.html"
-        >
-          <div>
-            <h3>Assignment 12</h3>
-            <p>Stop Watch</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-13"
-          target="_blank"
-          href="./assignment-13/index.html"
-        >
-          <div>
-            <h3>Assignment 13</h3>
-            <p>Stop Watch</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-14"
-          target="_blank"
-          href="./assignment-14/index.html"
-        >
-          <div>
-            <h3>Assignment 14</h3>
-            <p>JS Objects (DOM)</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-15-objects"
-          target="_blank"
-          href="./assignment-15-objects/index.html"
-        >
-          <div>
-            <h3>Assignment 15</h3>
-            <p>DOM Objects</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-16-todo"
-          target="_blank"
-          href="./assignment-16-todo/index.html"
-        >
-          <div>
-            <h3>Assignment Todo List</h3>
-            <p>List App</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-17-quiz-app"
-          target="_blank"
-          href="./assignment-17-quiz-app/index.html"
-        >
-          <div>
-            <h3>Assignment Quiz App</h3>
-            <p>Online Assessment</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-18-tic-tac-toe"
-          target="_blank"
-          href="./assignment-18-tic-tac-toe/index.html"
-        >
-          <div>
-            <h3>Assignment Tic Tac Toe</h3>
-            <p>Online Game</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-19-localstorage"
-          target="_blank"
-          href="./assignment-19-localstorage/index.html"
-        >
-          <div>
-            <h3>Assignment NodeJs</h3>
-            <p>Local Storage</p>
-          </div>
-        </a>
-
-        <a
-          class="button-links main assignment assignment-20-node-firebase"
-          target="_blank"
-          href="./assignment-20-node-firebase/index.html"
-        >
-          <div>
-            <h3>Assignment NodeJs</h3>
-            <p>Firebase with Google and Facebook Auth</p>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script src="./assets/js/app.js"></script>
-  </body>
 </html>
