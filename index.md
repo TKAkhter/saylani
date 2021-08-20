@@ -21,13 +21,13 @@
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
-  
+
   <link rel="stylesheet" href="./public/assets/css/style.css" >
 
   <link rel="icon" href="https://img.icons8.com/windows/32/000000/node-js.png" type="image/gif" sizes="16x16">
 
   <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-  
+
   <style media="screen">
 
     .assignment {
@@ -36,6 +36,8 @@
       display: flex;
       justify-content: flex-end;
       background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
     }
 
     .assignment-1 {
@@ -116,8 +118,20 @@
       background: url('./public/assets/images/assignment-19-localstorage.jpg');
     }
 
-    .assignment-20-node-firebase {
-      background: url('./assets/images/assignment-20-node-firebase.png');
+    .assignment-20-firebase {
+      background: url("./assets/images/assignment-20-firebase.png");
+    }
+
+    .assignment-21-nodejs {
+      background: url("./assets/images/assignment-21-nodejs.png");
+    }
+
+    .assignment-21-nodejs-dev {
+      background: url("./assets/images/assignment-21-nodejs-dev.png");
+    }
+
+    .assignment-21-nodejs-prac {
+      background: url("./assets/images/assignment-21-nodejs-prac.png");
     }
 
   </style>
@@ -239,14 +253,32 @@
       </a>
       <a class="button-links main assignment assignment-19-localstorage" target="_blank" href="./assignment-19-localstorage/index.html">
         <div>
-          <h3>Assignment NodeJs</h3>
-          <p>Local Storage</p>
+          <h3>Assignment Local Storage</h3>
+          <p>Setup Login and SignUp using Local Storage</p>
         </div>
       </a>
-      <a class="button-links main assignment assignment-20-node-firebase" target="_blank" href="./assignment-20-node-firebase/index.html">
+      <a class="button-links main assignment assignment-20-firebase" target="_blank" href="./assignment-20-firebase/index.html">
+        <div>
+          <h3>Assignment Firebase</h3>
+          <p>Firebase with Google and Facebook Auth</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-21-nodejs" target="_blank" href="./assignment-21-nodejs/index.html">
         <div>
           <h3>Assignment NodeJs</h3>
-          <p>Firebase with Google and Facebook Auth</p>
+          <p>NodeJS with Express and MongoDB using Mongoose</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-21-nodejs-dev" target="_blank" href="./assignment-21-nodejs-dev/index.html">
+        <div>
+          <h3>Assignment NodeJs Dev</h3>
+          <p>NodeJS with Express and MongoDB using Mongoose</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-21-nodejs-prac" target="_blank" href="./assignment-21-nodejs-prac/index.html">
+        <div>
+          <h3>Assignment NodeJs Practice</h3>
+          <p>NodeJS with Express and MongoDB using Mongoose</p>
         </div>
       </a>
     </div>
