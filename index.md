@@ -134,6 +134,10 @@
       background: url("./assets/images/assignment-21-nodejs-prac.png");
     }
 
+    .assignment-22-reactjs {
+      background: url("./assets/images/assignment-22-reactjs.png");
+    }
+
   </style>
 </head>
 
@@ -279,6 +283,12 @@
         <div>
           <h3>Assignment NodeJs Practice</h3>
           <p>NodeJS with Express and MongoDB using Mongoose</p>
+        </div>
+      </a>
+      <a class="button-links main assignment assignment-22-reactjs/public" target="_blank" href="./assignment-22-reactjs/public/index.html">
+        <div>
+          <h3>Assignment ReactJS</h3>
+          <p>ReactJS with Redux</p>
         </div>
       </a>
     </div>
