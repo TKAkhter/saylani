@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 
-const App = () => {
+const App = (props) => {
   return (
     <div className="App">
       <div>
-        Hello <strong>Talha!</strong>
+        Hello <strong>{props.name}!</strong>
       </div>
       <ul>
         <li>
@@ -14,10 +14,11 @@ const App = () => {
         <li>
           <p>paragraph</p>
         </li>
-        <ol>
-          <li> 5 + 10 = {5 + 10}</li>
-        </ol>
       </ul>
+      <ol>
+        <li> 5 + 10 = {5 + 10}</li>
+      </ol>
+      <hr />
     </div>
   );
 };
