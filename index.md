@@ -285,7 +285,7 @@
           <p>NodeJS with Express and MongoDB using Mongoose</p>
         </div>
       </a>
-      <a class="button-links main assignment assignment-22-reactjs/public" target="_blank" href="./assignment-22-reactjs/public/index.html">
+      <a class="button-links main assignment assignment-22-reactjs" target="_blank" href="./assignment-22-reactjs/build/index.html">
         <div>
           <h3>Assignment ReactJS</h3>
           <p>ReactJS with Redux</p>
