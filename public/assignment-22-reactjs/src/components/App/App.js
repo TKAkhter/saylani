@@ -1,8 +1,8 @@
-import React from "react";
-import Cards from "./component/Cards";
-import "./assets/css/App.css";
+import Cards from "../Cards/Cards";
+import "./App.css";
+
 // Importing the Bootstrap CSS
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   return (
