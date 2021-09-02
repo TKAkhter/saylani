@@ -5,7 +5,9 @@ import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App name="Talha1" />
+    <App name="Talha2" />
+    <App name="Talha3" />
   </React.StrictMode>,
   document.getElementById("root")
 );
