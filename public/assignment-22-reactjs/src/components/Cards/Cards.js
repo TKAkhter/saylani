@@ -1,26 +1,14 @@
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Button } from "@material-ui/core/";
+import { AccessibilityNew } from "@material-ui/icons";
 
 const Cards = () => {
   return (
-    <Container>
-      <Row xs={1} md={3} className="g-4">
-        {Array.from({ length: 4 }).map((_, idx) => (
-          <Col>
-            <Card>
-              <Card.Img variant="top" src="./assets/image/cards.jpg" />
-              <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <div>
+      <Button variant="contained" color="primary">
+        Hello World
+      </Button>
+      <AccessibilityNew />
+    </div>
   );
 };
 
