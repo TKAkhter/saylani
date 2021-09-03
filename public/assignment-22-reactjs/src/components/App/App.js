@@ -1,13 +1,14 @@
-import Cards from "../Cards/Cards";
 import "./App.css";
+import '@fontsource/roboto';
 
-// Importing the Bootstrap CSS
-import "bootstrap/dist/css/bootstrap.min.css";
+import Cards from "../Cards/Cards";
+import SignIn from '../SignIn/SignIn'
 
 const App = () => {
   return (
     <div className="App">
       <Cards />
+      <SignIn />
     </div>
   );
 };
