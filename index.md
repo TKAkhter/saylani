@@ -134,8 +134,8 @@
       background: url("./assets/images/assignment-21-nodejs-prac.png");
     }
 
-    .assignment-22-reactjs {
-      background: url("./assets/images/assignment-22-reactjs.png");
+    .assignment-22-reactjs-usestate {
+      background: url("./assets/images/assignment-22-reactjs-usestate.png");
     }
 
   </style>
