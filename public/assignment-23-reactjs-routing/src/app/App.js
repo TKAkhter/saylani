@@ -1,7 +1,7 @@
-import About from "./components/About";
-import ContactUs from "./components/ContactUs";
-import Blogs from "./components/Blogs";
-import Home from "./components/Home";
+import About from "../components/About";
+import ContactUs from "../components/ContactUs";
+import Blogs from "../components/Blogs";
+import Home from "../components/Home";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
