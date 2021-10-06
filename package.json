@@ -4,7 +4,9 @@
   "description": "Saylani Assignments",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -15,9 +17,12 @@
   "bugs": {
     "url": "https://github.com/TKAkhter/saylani/issues"
   },
-  "homepage": "https://github.com/TKAkhter/saylani#readme",
+  "homepage": "http://TKAkhter.github.io/saylani",
   "dependencies": {
     "firebase": "^8.8.1",
     "firebase-admin": "^9.11.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
